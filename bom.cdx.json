@@ -2760,7 +2760,7 @@
         "otp:component:bandit:hex:39545397",
         "otp:component:websock_adapter:hex:95378882"
       ],
-      "ref": "otp:component:ex_daytona:github:53704919"
+      "ref": "otp:component:ex_daytona:github:54267914"
     },
     { "ref": "otp:component:crypto:otp:75923108" },
     {
@@ -2984,8 +2984,8 @@
   ],
   "metadata": {
     "component": {
-      "bom-ref": "otp:component:ex_daytona:github:53704919",
-      "cpe": "cpe:2.3:a:the-ixway:ex_daytona:0.4.0:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:ex_daytona:github:54267914",
+      "cpe": "cpe:2.3:a:the-ixway:ex_daytona:0.5.0:*:*:*:*:*:*:*",
       "description": "Unofficial Elixir SDK for the Daytona API (platform, toolbox, and analytics)\n",
       "externalReferences": [
         {
@@ -3017,12 +3017,12 @@
         }
       ],
       "name": "ex_daytona",
-      "purl": "pkg:github/the-ixway/ex_daytona@0.4.0?download_url=https:%2F%2Fgithub.com%2FThe-Ixway%2Fex_daytona%2Farchive%2F0.4.0.tar.gz&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2FThe-Ixway%2Fex_daytona.git",
+      "purl": "pkg:github/the-ixway/ex_daytona@0.5.0?download_url=https:%2F%2Fgithub.com%2FThe-Ixway%2Fex_daytona%2Farchive%2F0.5.0.tar.gz&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2FThe-Ixway%2Fex_daytona.git",
       "scope": "required",
       "type": "library",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
-    "timestamp": "2026-10-06T20:10:10Z",
+    "timestamp": "2026-10-06T20:23:22Z",
     "tools": {
       "components": [
         {
@@ -3035,7 +3035,7 @@
       ]
     }
   },
-  "serialNumber": "urn:uuid:edbb85a8-96a2-4505-a01c-cc8890ceb8e1",
+  "serialNumber": "urn:uuid:b845a5ff-7ea1-44ce-871b-d17d01453de8",
   "specVersion": "1.6",
   "version": 1
 }

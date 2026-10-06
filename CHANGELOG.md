@@ -10,6 +10,13 @@ inserts new sections below this marker:
 
 <!-- changelog -->
 
+## [v0.5.0](https://github.com/Ixway-Labs/ex_daytona/compare/v0.4.0...v0.5.0) (2026-10-06)
+### Breaking Changes:
+
+* sync SDK with upstream OpenAPI specs (#15) by houllette
+
+
+
 ## [v0.4.0](https://github.com/The-Ixway/ex_daytona/compare/v0.3.0...v0.4.0) (2026-09-01)
 
 Developer-experience release: test without a Daytona account, snapshots
