@@ -2,8 +2,8 @@
   "bomFormat": "CycloneDX",
   "components": [
     {
-      "bom-ref": "otp:component:protobuf:hex:31621765",
-      "cpe": "cpe:2.3:a:elixir-protobuf:protobuf:0.16.1:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:protobuf:hex:88750128",
+      "cpe": "cpe:2.3:a:elixir-protobuf:protobuf:0.17.0:*:*:*:*:*:*:*",
       "description": "A pure Elixir implementation of Google Protobuf.",
       "externalReferences": [
         {
@@ -14,11 +14,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "97fb9f1fe48c38c4ebfc0f8a7a20adb22b2491bbfbdb192fab9a6821d5d604e1"
+              "content": "ca6c91f6f63e2c147b47f03eefd10b80538aa6fc55ff4b12b795efb786b0152f"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/protobuf-0.16.1.tar"
+          "url": "https://repo.hex.pm/tarballs/protobuf-0.17.0.tar"
         },
         {
           "comment": "github",
@@ -30,7 +30,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "97fb9f1fe48c38c4ebfc0f8a7a20adb22b2491bbfbdb192fab9a6821d5d604e1"
+          "content": "ca6c91f6f63e2c147b47f03eefd10b80538aa6fc55ff4b12b795efb786b0152f"
         }
       ],
       "licenses": [
@@ -42,14 +42,14 @@
         }
       ],
       "name": "protobuf",
-      "purl": "pkg:hex/protobuf@0.16.1?checksum=sha256:97fb9f1fe48c38c4ebfc0f8a7a20adb22b2491bbfbdb192fab9a6821d5d604e1&download_url=https://repo.hex.pm/tarballs/protobuf-0.16.1.tar&vcs_url=https://github.com/elixir-protobuf/protobuf",
-      "scope": "required",
+      "purl": "pkg:hex/protobuf@0.17.0?checksum=sha256:ca6c91f6f63e2c147b47f03eefd10b80538aa6fc55ff4b12b795efb786b0152f&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fprotobuf-0.17.0.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-protobuf%2Fprotobuf",
+      "scope": "excluded",
       "type": "library",
-      "version": "0.16.1"
+      "version": "0.17.0"
     },
     {
-      "bom-ref": "otp:component:dialyxir:hex:88810649",
-      "cpe": "cpe:2.3:a:jeremyjh:dialyxir:1.4.7:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:dialyxir:hex:67555736",
+      "cpe": "cpe:2.3:a:jeremyjh:dialyxir:1.4.8:*:*:*:*:*:*:*",
       "description": "Mix tasks to simplify use of Dialyzer in Elixir projects.\n",
       "externalReferences": [
         {
@@ -60,11 +60,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "b34527202e6eb8cee198efec110996c25c5898f43a4094df157f8d28f27d9efe"
+              "content": "cbd5a851571e5dfeb32aaf2e840bfa98b7864cb3071bf2ef5d95d1276b12e072"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/dialyxir-1.4.7.tar"
+          "url": "https://repo.hex.pm/tarballs/dialyxir-1.4.8.tar"
         },
         {
           "comment": "changelog",
@@ -81,7 +81,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "b34527202e6eb8cee198efec110996c25c5898f43a4094df157f8d28f27d9efe"
+          "content": "cbd5a851571e5dfeb32aaf2e840bfa98b7864cb3071bf2ef5d95d1276b12e072"
         }
       ],
       "licenses": [
@@ -93,13 +93,13 @@
         }
       ],
       "name": "dialyxir",
-      "purl": "pkg:hex/dialyxir@1.4.7?checksum=sha256:b34527202e6eb8cee198efec110996c25c5898f43a4094df157f8d28f27d9efe&download_url=https://repo.hex.pm/tarballs/dialyxir-1.4.7.tar&vcs_url=https://github.com/jeremyjh/dialyxir",
+      "purl": "pkg:hex/dialyxir@1.4.8?checksum=sha256:cbd5a851571e5dfeb32aaf2e840bfa98b7864cb3071bf2ef5d95d1276b12e072&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fdialyxir-1.4.8.tar&vcs_url=https:%2F%2Fgithub.com%2Fjeremyjh%2Fdialyxir",
       "scope": "excluded",
       "type": "library",
-      "version": "1.4.7"
+      "version": "1.4.8"
     },
     {
-      "bom-ref": "otp:component:mix:otp:47854094",
+      "bom-ref": "otp:component:mix:otp:19602035",
       "cpe": "cpe:2.3:a:elixir-lang:mix:1.20.4:*:*:*:*:*:*:*",
       "description": "mix",
       "externalReferences": [
@@ -132,13 +132,13 @@
         }
       ],
       "name": "mix",
-      "purl": "pkg:otp/mix@1.20.4?download_url=https://github.com/elixir-lang/elixir/archive/refs/tags/v1.20.4.zip&repository_url=https://github.com/elixir-lang/elixir&vcs_url=git%2Bhttps://github.com/elixir-lang/elixir.git#lib/mix",
-      "scope": "required",
+      "purl": "pkg:otp/mix@1.20.4?download_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir%2Farchive%2Frefs%2Ftags%2Fv1.20.4.zip&repository_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Felixir-lang%2Felixir.git#lib/mix",
+      "scope": "excluded",
       "type": "library",
       "version": "1.20.4"
     },
     {
-      "bom-ref": "otp:component:nimble_ownership:hex:131509519",
+      "bom-ref": "otp:component:nimble_ownership:hex:116515284",
       "cpe": "cpe:2.3:a:dashbitco:nimble_ownership:1.0.2:*:*:*:*:*:*:*",
       "description": "Track ownership of resources across processes.",
       "externalReferences": [
@@ -188,14 +188,14 @@
         }
       ],
       "name": "nimble_ownership",
-      "purl": "pkg:hex/nimble_ownership@1.0.2?checksum=sha256:098af64e1f6f8609c6672127cfe9e9590a5d3fcdd82bc17a377b8692fd81a879&download_url=https://repo.hex.pm/tarballs/nimble_ownership-1.0.2.tar&vcs_url=https://github.com/dashbitco/nimble_ownership",
+      "purl": "pkg:hex/nimble_ownership@1.0.2?checksum=sha256:098af64e1f6f8609c6672127cfe9e9590a5d3fcdd82bc17a377b8692fd81a879&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fnimble_ownership-1.0.2.tar&vcs_url=https:%2F%2Fgithub.com%2Fdashbitco%2Fnimble_ownership",
       "scope": "required",
       "type": "library",
       "version": "1.0.2"
     },
     {
-      "bom-ref": "otp:component:mox:hex:133772067",
-      "cpe": "cpe:2.3:a:dashbitco:mox:1.3.1:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:mox:hex:21188532",
+      "cpe": "cpe:2.3:a:dashbitco:mox:1.3.2:*:*:*:*:*:*:*",
       "description": "Mocks and explicit contracts for Elixir",
       "externalReferences": [
         {
@@ -206,16 +206,16 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "6aa44b17e40abed6c6d501e6393d229f2820fb69c5971fd17fe0d7f7eefa41fd"
+              "content": "97918a185e727f3128a826f01827b5b8168e1b815bda19eb4192c3ffdb6a8054"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/mox-1.3.1.tar"
+          "url": "https://repo.hex.pm/tarballs/mox-1.3.2.tar"
         },
         {
           "comment": "docs",
           "type": "documentation",
-          "url": "https://mox.hexdocs.pm/1.3.1/"
+          "url": "https://mox.hexdocs.pm/1.3.2/"
         },
         {
           "comment": "github",
@@ -225,14 +225,14 @@
         {
           "comment": "homepage",
           "type": "website",
-          "url": "https://hex.pm/packages/mox/1.3.1"
+          "url": "https://hex.pm/packages/mox/1.3.2"
         }
       ],
       "group": "hexpm",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "6aa44b17e40abed6c6d501e6393d229f2820fb69c5971fd17fe0d7f7eefa41fd"
+          "content": "97918a185e727f3128a826f01827b5b8168e1b815bda19eb4192c3ffdb6a8054"
         }
       ],
       "licenses": [
@@ -244,13 +244,13 @@
         }
       ],
       "name": "mox",
-      "purl": "pkg:hex/mox@1.3.1?checksum=sha256:6aa44b17e40abed6c6d501e6393d229f2820fb69c5971fd17fe0d7f7eefa41fd&download_url=https://repo.hex.pm/tarballs/mox-1.3.1.tar&vcs_url=https://github.com/dashbitco/mox",
+      "purl": "pkg:hex/mox@1.3.2?checksum=sha256:97918a185e727f3128a826f01827b5b8168e1b815bda19eb4192c3ffdb6a8054&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmox-1.3.2.tar&vcs_url=https:%2F%2Fgithub.com%2Fdashbitco%2Fmox",
       "scope": "excluded",
       "type": "library",
-      "version": "1.3.1"
+      "version": "1.3.2"
     },
     {
-      "bom-ref": "otp:component:eex:otp:45483983",
+      "bom-ref": "otp:component:eex:otp:33774477",
       "cpe": "cpe:2.3:a:elixir-lang:eex:1.20.4:*:*:*:*:*:*:*",
       "description": "eex",
       "externalReferences": [
@@ -283,13 +283,13 @@
         }
       ],
       "name": "eex",
-      "purl": "pkg:otp/eex@1.20.4?download_url=https://github.com/elixir-lang/elixir/archive/refs/tags/v1.20.4.zip&repository_url=https://github.com/elixir-lang/elixir&vcs_url=git%2Bhttps://github.com/elixir-lang/elixir.git#lib/eex",
+      "purl": "pkg:otp/eex@1.20.4?download_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir%2Farchive%2Frefs%2Ftags%2Fv1.20.4.zip&repository_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Felixir-lang%2Felixir.git#lib/eex",
       "scope": "required",
       "type": "library",
       "version": "1.20.4"
     },
     {
-      "bom-ref": "otp:component:websock:hex:95532479",
+      "bom-ref": "otp:component:websock:hex:3898161",
       "cpe": "cpe:2.3:a:phoenixframework:websock:0.5.3:*:*:*:*:*:*:*",
       "description": "A specification for WebSocket connections",
       "externalReferences": [
@@ -339,14 +339,14 @@
         }
       ],
       "name": "websock",
-      "purl": "pkg:hex/websock@0.5.3?checksum=sha256:6105453d7fac22c712ad66fab1d45abdf049868f253cf719b625151460b8b453&download_url=https://repo.hex.pm/tarballs/websock-0.5.3.tar&vcs_url=https://github.com/phoenixframework/websock",
+      "purl": "pkg:hex/websock@0.5.3?checksum=sha256:6105453d7fac22c712ad66fab1d45abdf049868f253cf719b625151460b8b453&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fwebsock-0.5.3.tar&vcs_url=https:%2F%2Fgithub.com%2Fphoenixframework%2Fwebsock",
       "scope": "required",
       "type": "library",
       "version": "0.5.3"
     },
     {
-      "bom-ref": "otp:component:sbom:hex:84832432",
-      "cpe": "cpe:2.3:a:erlef:sbom:0.10.0:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:sbom:hex:74113482",
+      "cpe": "cpe:2.3:a:erlef:sbom:0.11.0:*:*:*:*:*:*:*",
       "description": "Mix task to generate a Software Bill-of-Materials (SBoM) in CycloneDX format",
       "externalReferences": [
         {
@@ -357,11 +357,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "a8116ef965c1ebd103e223545794bd0a6691edd3ec678ec07972d473e2badc95"
+              "content": "edbd95e75155fed8fe61a19f21ea590c58178fe237c816afa534bc514ae53eb9"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/sbom-0.10.0.tar"
+          "url": "https://repo.hex.pm/tarballs/sbom-0.11.0.tar"
         },
         {
           "comment": "github",
@@ -383,7 +383,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a8116ef965c1ebd103e223545794bd0a6691edd3ec678ec07972d473e2badc95"
+          "content": "edbd95e75155fed8fe61a19f21ea590c58178fe237c816afa534bc514ae53eb9"
         }
       ],
       "licenses": [
@@ -393,13 +393,13 @@
         }
       ],
       "name": "sbom",
-      "purl": "pkg:hex/sbom@0.10.0?checksum=sha256:a8116ef965c1ebd103e223545794bd0a6691edd3ec678ec07972d473e2badc95&download_url=https://repo.hex.pm/tarballs/sbom-0.10.0.tar&vcs_url=https://github.com/erlef/mix_sbom",
+      "purl": "pkg:hex/sbom@0.11.0?checksum=sha256:edbd95e75155fed8fe61a19f21ea590c58178fe237c816afa534bc514ae53eb9&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fsbom-0.11.0.tar&vcs_url=https:%2F%2Fgithub.com%2Ferlef%2Fmix_sbom",
       "scope": "excluded",
       "type": "library",
-      "version": "0.10.0"
+      "version": "0.11.0"
     },
     {
-      "bom-ref": "otp:component:hex:otp:256814",
+      "bom-ref": "otp:component:hex:otp:65340933",
       "cpe": "cpe:2.3:a:hexpm:hex:2.5.0:*:*:*:*:*:*:*",
       "description": "hex",
       "externalReferences": [
@@ -432,14 +432,14 @@
         }
       ],
       "name": "hex",
-      "purl": "pkg:otp/hex?download_url=https://github.com/hexpm/hex/archive/refs/tags/v2.5.0.zip&repository_url=https://github.com/hexpm/hex&vcs_url=git%2Bhttps://github.com/hexpm/hex.git",
-      "scope": "required",
+      "purl": "pkg:otp/hex?download_url=https:%2F%2Fgithub.com%2Fhexpm%2Fhex%2Farchive%2Frefs%2Ftags%2Fv2.5.0.zip&repository_url=https:%2F%2Fgithub.com%2Fhexpm%2Fhex&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Fhexpm%2Fhex.git",
+      "scope": "excluded",
       "type": "library",
       "version": "2.5.0"
     },
     {
-      "bom-ref": "otp:component:mint:hex:82086386",
-      "cpe": "cpe:2.3:a:elixir-mint:mint:1.9.3:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:mint:hex:11187727",
+      "cpe": "cpe:2.3:a:elixir-mint:mint:1.11.0:*:*:*:*:*:*:*",
       "description": "Small and composable HTTP client.",
       "externalReferences": [
         {
@@ -450,11 +450,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "5f7c9342480c069dbbc4eeac3490303c9e01870ff01a7f1d29b6107054fc1e74"
+              "content": "c6279ba2d6aa3a383a1d4cfbe7b59f42e6efd400f58d8e2acfeac48a438693ab"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/mint-1.9.3.tar"
+          "url": "https://repo.hex.pm/tarballs/mint-1.11.0.tar"
         },
         {
           "comment": "github",
@@ -466,7 +466,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "5f7c9342480c069dbbc4eeac3490303c9e01870ff01a7f1d29b6107054fc1e74"
+          "content": "c6279ba2d6aa3a383a1d4cfbe7b59f42e6efd400f58d8e2acfeac48a438693ab"
         }
       ],
       "licenses": [
@@ -478,14 +478,14 @@
         }
       ],
       "name": "mint",
-      "purl": "pkg:hex/mint@1.9.3?checksum=sha256:5f7c9342480c069dbbc4eeac3490303c9e01870ff01a7f1d29b6107054fc1e74&download_url=https://repo.hex.pm/tarballs/mint-1.9.3.tar&vcs_url=https://github.com/elixir-mint/mint",
+      "purl": "pkg:hex/mint@1.11.0?checksum=sha256:c6279ba2d6aa3a383a1d4cfbe7b59f42e6efd400f58d8e2acfeac48a438693ab&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmint-1.11.0.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-mint%2Fmint",
       "scope": "required",
       "type": "library",
-      "version": "1.9.3"
+      "version": "1.11.0"
     },
     {
-      "bom-ref": "otp:component:ssl:otp:131716903",
-      "cpe": "cpe:2.3:a:erlang:ssl:11.7.4:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:ssl:otp:56148158",
+      "cpe": "cpe:2.3:a:erlang:ssl:11.7.7:*:*:*:*:*:*:*",
       "description": "Erlang/OTP SSL application",
       "externalReferences": [
         {
@@ -494,7 +494,7 @@
         },
         {
           "type": "distribution",
-          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-11.7.4.zip"
+          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-11.7.7.zip"
         },
         {
           "comment": "github",
@@ -517,13 +517,13 @@
         }
       ],
       "name": "ssl",
-      "purl": "pkg:otp/ssl?download_url=https://github.com/erlang/otp/archive/refs/tags/OTP-11.7.4.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/ssl",
+      "purl": "pkg:otp/ssl?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-11.7.7.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/ssl",
       "scope": "required",
       "type": "library",
-      "version": "11.7.4"
+      "version": "11.7.7"
     },
     {
-      "bom-ref": "otp:component:plug:hex:15594346",
+      "bom-ref": "otp:component:plug:hex:123091062",
       "cpe": "cpe:2.3:a:elixir-plug:plug:1.20.3:*:*:*:*:*:*:*",
       "description": "Compose web applications with functions",
       "externalReferences": [
@@ -568,13 +568,13 @@
         }
       ],
       "name": "plug",
-      "purl": "pkg:hex/plug@1.20.3?checksum=sha256:be266aee1b8536ef6409d58cf39a3121319f0ec47cfa1b24024485aa0e76ad76&download_url=https://repo.hex.pm/tarballs/plug-1.20.3.tar&vcs_url=https://github.com/elixir-plug/plug",
+      "purl": "pkg:hex/plug@1.20.3?checksum=sha256:be266aee1b8536ef6409d58cf39a3121319f0ec47cfa1b24024485aa0e76ad76&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fplug-1.20.3.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-plug%2Fplug",
       "scope": "required",
       "type": "library",
       "version": "1.20.3"
     },
     {
-      "bom-ref": "otp:component:logger:otp:72055478",
+      "bom-ref": "otp:component:logger:otp:112940656",
       "cpe": "cpe:2.3:a:elixir-lang:logger:1.20.4:*:*:*:*:*:*:*",
       "description": "logger",
       "externalReferences": [
@@ -607,14 +607,14 @@
         }
       ],
       "name": "logger",
-      "purl": "pkg:otp/logger@1.20.4?download_url=https://github.com/elixir-lang/elixir/archive/refs/tags/v1.20.4.zip&repository_url=https://github.com/elixir-lang/elixir&vcs_url=git%2Bhttps://github.com/elixir-lang/elixir.git#lib/logger",
+      "purl": "pkg:otp/logger@1.20.4?download_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir%2Farchive%2Frefs%2Ftags%2Fv1.20.4.zip&repository_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Felixir-lang%2Felixir.git#lib/logger",
       "scope": "required",
       "type": "library",
       "version": "1.20.4"
     },
     {
-      "bom-ref": "otp:component:inets:otp:121672126",
-      "cpe": "cpe:2.3:a:erlang:inets:9.7.1:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:inets:otp:2772139",
+      "cpe": "cpe:2.3:a:erlang:inets:9.8:*:*:*:*:*:*:*",
       "description": "INETS  CXC 138 49",
       "externalReferences": [
         {
@@ -623,7 +623,7 @@
         },
         {
           "type": "distribution",
-          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-9.7.1.zip"
+          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-9.8.zip"
         },
         {
           "comment": "github",
@@ -646,13 +646,13 @@
         }
       ],
       "name": "inets",
-      "purl": "pkg:otp/inets?download_url=https://github.com/erlang/otp/archive/refs/tags/OTP-9.7.1.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/inets",
+      "purl": "pkg:otp/inets?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-9.8.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/inets",
       "scope": "required",
       "type": "library",
-      "version": "9.7.1"
+      "version": "9.8"
     },
     {
-      "bom-ref": "otp:component:erts:otp:112605601",
+      "bom-ref": "otp:component:erts:otp:78852026",
       "cpe": "cpe:2.3:a:erlang:erts:*:*:*:*:*:*:*:*",
       "externalReferences": [
         {
@@ -684,12 +684,12 @@
         }
       ],
       "name": "erts",
-      "purl": "pkg:otp/erts?download_url=https://github.com/erlang/otp/archive/refs/heads/master.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/erts",
-      "scope": "required",
+      "purl": "pkg:otp/erts?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Fheads%2Fmaster.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/erts",
+      "scope": "excluded",
       "type": "library"
     },
     {
-      "bom-ref": "otp:component:syntax_tools:otp:25983030",
+      "bom-ref": "otp:component:syntax_tools:otp:55750255",
       "cpe": "cpe:2.3:a:erlang:syntax_tools:*:*:*:*:*:*:*:*",
       "externalReferences": [
         {
@@ -721,12 +721,12 @@
         }
       ],
       "name": "syntax_tools",
-      "purl": "pkg:otp/syntax_tools?download_url=https://github.com/erlang/otp/archive/refs/heads/master.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/syntax_tools",
-      "scope": "required",
+      "purl": "pkg:otp/syntax_tools?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Fheads%2Fmaster.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/syntax_tools",
+      "scope": "excluded",
       "type": "library"
     },
     {
-      "bom-ref": "otp:component:elixir:otp:91030763",
+      "bom-ref": "otp:component:elixir:otp:50056156",
       "cpe": "cpe:2.3:a:elixir-lang:elixir:1.20.4:*:*:*:*:*:*:*",
       "description": "elixir",
       "externalReferences": [
@@ -757,14 +757,14 @@
         }
       ],
       "name": "elixir",
-      "purl": "pkg:otp/elixir@1.20.4?download_url=https://github.com/elixir-lang/elixir/archive/refs/tags/v1.20.4.zip&repository_url=https://github.com/elixir-lang/elixir&vcs_url=git%2Bhttps://github.com/elixir-lang/elixir.git#lib/elixir",
+      "purl": "pkg:otp/elixir@1.20.4?download_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir%2Farchive%2Frefs%2Ftags%2Fv1.20.4.zip&repository_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Felixir-lang%2Felixir.git#lib/elixir",
       "scope": "required",
       "type": "library",
       "version": "1.20.4"
     },
     {
-      "bom-ref": "otp:component:kernel:otp:41009003",
-      "cpe": "cpe:2.3:a:erlang:kernel:11.0.3:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:kernel:otp:73337799",
+      "cpe": "cpe:2.3:a:erlang:kernel:11.0.4:*:*:*:*:*:*:*",
       "description": "ERTS  CXC 138 10",
       "externalReferences": [
         {
@@ -773,7 +773,7 @@
         },
         {
           "type": "distribution",
-          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-11.0.3.zip"
+          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-11.0.4.zip"
         },
         {
           "comment": "github",
@@ -796,13 +796,13 @@
         }
       ],
       "name": "kernel",
-      "purl": "pkg:otp/kernel?download_url=https://github.com/erlang/otp/archive/refs/tags/OTP-11.0.3.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/kernel",
+      "purl": "pkg:otp/kernel?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-11.0.4.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/kernel",
       "scope": "required",
       "type": "library",
-      "version": "11.0.3"
+      "version": "11.0.4"
     },
     {
-      "bom-ref": "otp:component:ex_unit:otp:106830735",
+      "bom-ref": "otp:component:ex_unit:otp:78841851",
       "cpe": "cpe:2.3:a:elixir-lang:ex_unit:*:*:*:*:*:*:*:*",
       "externalReferences": [
         {
@@ -834,12 +834,12 @@
         }
       ],
       "name": "ex_unit",
-      "purl": "pkg:otp/ex_unit?download_url=https://github.com/elixir-lang/elixir/archive/refs/heads/main.zip&repository_url=https://github.com/elixir-lang/elixir&vcs_url=git%2Bhttps://github.com/elixir-lang/elixir.git#lib/ex_unit",
-      "scope": "required",
+      "purl": "pkg:otp/ex_unit?download_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir%2Farchive%2Frefs%2Fheads%2Fmain.zip&repository_url=https:%2F%2Fgithub.com%2Felixir-lang%2Felixir&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Felixir-lang%2Felixir.git#lib/ex_unit",
+      "scope": "excluded",
       "type": "library"
     },
     {
-      "bom-ref": "otp:component:nimble_options:hex:39936919",
+      "bom-ref": "otp:component:nimble_options:hex:24609547",
       "cpe": "cpe:2.3:a:dashbitco:nimble_options:1.1.1:*:*:*:*:*:*:*",
       "description": "A tiny library for validating and documenting high-level options",
       "externalReferences": [
@@ -879,13 +879,13 @@
         }
       ],
       "name": "nimble_options",
-      "purl": "pkg:hex/nimble_options@1.1.1?checksum=sha256:821b2470ca9442c4b6984882fe9bb0389371b8ddec4d45a9504f00a66f650b44&download_url=https://repo.hex.pm/tarballs/nimble_options-1.1.1.tar&vcs_url=https://github.com/dashbitco/nimble_options",
+      "purl": "pkg:hex/nimble_options@1.1.1?checksum=sha256:821b2470ca9442c4b6984882fe9bb0389371b8ddec4d45a9504f00a66f650b44&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fnimble_options-1.1.1.tar&vcs_url=https:%2F%2Fgithub.com%2Fdashbitco%2Fnimble_options",
       "scope": "required",
       "type": "library",
       "version": "1.1.1"
     },
     {
-      "bom-ref": "otp:component:makeup_elixir:hex:91535187",
+      "bom-ref": "otp:component:makeup_elixir:hex:114523590",
       "cpe": "cpe:2.3:a:elixir-makeup:makeup_elixir:1.0.1:*:*:*:*:*:*:*",
       "description": "Elixir lexer for the Makeup syntax highlighter.\n",
       "externalReferences": [
@@ -925,14 +925,14 @@
         }
       ],
       "name": "makeup_elixir",
-      "purl": "pkg:hex/makeup_elixir@1.0.1?checksum=sha256:7284900d412a3e5cfd97fdaed4f5ed389b8f2b4cb49efc0eb3bd10e2febf9507&download_url=https://repo.hex.pm/tarballs/makeup_elixir-1.0.1.tar&vcs_url=https://github.com/elixir-makeup/makeup_elixir",
-      "scope": "required",
+      "purl": "pkg:hex/makeup_elixir@1.0.1?checksum=sha256:7284900d412a3e5cfd97fdaed4f5ed389b8f2b4cb49efc0eb3bd10e2febf9507&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmakeup_elixir-1.0.1.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-makeup%2Fmakeup_elixir",
+      "scope": "excluded",
       "type": "library",
       "version": "1.0.1"
     },
     {
-      "bom-ref": "otp:component:tesla:hex:106181469",
-      "cpe": "cpe:2.3:a:elixir-tesla:tesla:1.21.2:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:tesla:hex:41657042",
+      "cpe": "cpe:2.3:a:elixir-tesla:tesla:1.21.3:*:*:*:*:*:*:*",
       "description": "HTTP client library, with support for middleware and multiple adapters.",
       "externalReferences": [
         {
@@ -943,11 +943,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "296bbafd1a328533c57e6b0e93078983cf40a827546e58a20464ce75485d5254"
+              "content": "558aca0d763aaed4cba418b6078c290ffd55ddd1b03e58d6163cb7438851855e"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/tesla-1.21.2.tar"
+          "url": "https://repo.hex.pm/tarballs/tesla-1.21.3.tar"
         },
         {
           "comment": "changelog",
@@ -964,7 +964,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "296bbafd1a328533c57e6b0e93078983cf40a827546e58a20464ce75485d5254"
+          "content": "558aca0d763aaed4cba418b6078c290ffd55ddd1b03e58d6163cb7438851855e"
         }
       ],
       "licenses": [
@@ -976,14 +976,14 @@
         }
       ],
       "name": "tesla",
-      "purl": "pkg:hex/tesla@1.21.2?checksum=sha256:296bbafd1a328533c57e6b0e93078983cf40a827546e58a20464ce75485d5254&download_url=https://repo.hex.pm/tarballs/tesla-1.21.2.tar&vcs_url=https://github.com/elixir-tesla/tesla",
+      "purl": "pkg:hex/tesla@1.21.3?checksum=sha256:558aca0d763aaed4cba418b6078c290ffd55ddd1b03e58d6163cb7438851855e&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Ftesla-1.21.3.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-tesla%2Ftesla",
       "scope": "required",
       "type": "library",
-      "version": "1.21.2"
+      "version": "1.21.3"
     },
     {
-      "bom-ref": "otp:component:purl:hex:34644079",
-      "cpe": "cpe:2.3:a:erlef:purl:0.3.0:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:purl:hex:127504337",
+      "cpe": "cpe:2.3:a:erlef:purl:0.5.0:*:*:*:*:*:*:*",
       "description": "Implementation of the purl (package url) specification",
       "externalReferences": [
         {
@@ -994,11 +994,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "158cf2c0533517fe0d68752bd790392f065c5ffdfbde38524890066ebe640302"
+              "content": "658057133f7698b250821828185997279dba75f3991f5b570357cf3d73f64b4d"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/purl-0.3.0.tar"
+          "url": "https://repo.hex.pm/tarballs/purl-0.5.0.tar"
         },
         {
           "comment": "changelog",
@@ -1025,7 +1025,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "158cf2c0533517fe0d68752bd790392f065c5ffdfbde38524890066ebe640302"
+          "content": "658057133f7698b250821828185997279dba75f3991f5b570357cf3d73f64b4d"
         }
       ],
       "licenses": [
@@ -1037,13 +1037,13 @@
         }
       ],
       "name": "purl",
-      "purl": "pkg:hex/purl@0.3.0?checksum=sha256:158cf2c0533517fe0d68752bd790392f065c5ffdfbde38524890066ebe640302&download_url=https://repo.hex.pm/tarballs/purl-0.3.0.tar&vcs_url=https://github.com/erlef/purl",
-      "scope": "required",
+      "purl": "pkg:hex/purl@0.5.0?checksum=sha256:658057133f7698b250821828185997279dba75f3991f5b570357cf3d73f64b4d&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fpurl-0.5.0.tar&vcs_url=https:%2F%2Fgithub.com%2Ferlef%2Fpurl",
+      "scope": "excluded",
       "type": "library",
-      "version": "0.3.0"
+      "version": "0.5.0"
     },
     {
-      "bom-ref": "otp:component:bunt:hex:49979295",
+      "bom-ref": "otp:component:bunt:hex:84001713",
       "cpe": "cpe:2.3:a:rrrene:bunt:1.0.0:*:*:*:*:*:*:*",
       "description": "256 color ANSI coloring in the terminal",
       "externalReferences": [
@@ -1083,14 +1083,14 @@
         }
       ],
       "name": "bunt",
-      "purl": "pkg:hex/bunt@1.0.0?checksum=sha256:dc5f86aa08a5f6fa6b8096f0735c4e76d54ae5c9fa2c143e5a1fc7c1cd9bb6b5&download_url=https://repo.hex.pm/tarballs/bunt-1.0.0.tar&vcs_url=https://github.com/rrrene/bunt",
-      "scope": "required",
+      "purl": "pkg:hex/bunt@1.0.0?checksum=sha256:dc5f86aa08a5f6fa6b8096f0735c4e76d54ae5c9fa2c143e5a1fc7c1cd9bb6b5&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fbunt-1.0.0.tar&vcs_url=https:%2F%2Fgithub.com%2Frrrene%2Fbunt",
+      "scope": "excluded",
       "type": "library",
       "version": "1.0.0"
     },
     {
-      "bom-ref": "otp:component:hpax:hex:13049320",
-      "cpe": "cpe:2.3:a:elixir-mint:hpax:1.0.4:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:hpax:hex:55468305",
+      "cpe": "cpe:2.3:a:elixir-mint:hpax:1.1.0:*:*:*:*:*:*:*",
       "description": "Implementation of the HPACK protocol (RFC 7541) for Elixir",
       "externalReferences": [
         {
@@ -1101,11 +1101,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "afc7cb142ebcc2d01ce7816190b98ce5dd49e799111b24249f3443d730f377ca"
+              "content": "0b8d0f05832f55571d65ac720f79bf8994138ffbb133209dc4685eae0ad456a8"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/hpax-1.0.4.tar"
+          "url": "https://repo.hex.pm/tarballs/hpax-1.1.0.tar"
         },
         {
           "comment": "github",
@@ -1117,7 +1117,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "afc7cb142ebcc2d01ce7816190b98ce5dd49e799111b24249f3443d730f377ca"
+          "content": "0b8d0f05832f55571d65ac720f79bf8994138ffbb133209dc4685eae0ad456a8"
         }
       ],
       "licenses": [
@@ -1129,13 +1129,13 @@
         }
       ],
       "name": "hpax",
-      "purl": "pkg:hex/hpax@1.0.4?checksum=sha256:afc7cb142ebcc2d01ce7816190b98ce5dd49e799111b24249f3443d730f377ca&download_url=https://repo.hex.pm/tarballs/hpax-1.0.4.tar&vcs_url=https://github.com/elixir-mint/hpax",
+      "purl": "pkg:hex/hpax@1.1.0?checksum=sha256:0b8d0f05832f55571d65ac720f79bf8994138ffbb133209dc4685eae0ad456a8&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fhpax-1.1.0.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-mint%2Fhpax",
       "scope": "required",
       "type": "library",
-      "version": "1.0.4"
+      "version": "1.1.0"
     },
     {
-      "bom-ref": "otp:component:makeup_erlang:hex:89517532",
+      "bom-ref": "otp:component:makeup_erlang:hex:12113811",
       "cpe": "cpe:2.3:a:elixir-makeup:makeup_erlang:1.1.0:*:*:*:*:*:*:*",
       "description": "Erlang lexer for the Makeup syntax highlighter.\n",
       "externalReferences": [
@@ -1175,14 +1175,14 @@
         }
       ],
       "name": "makeup_erlang",
-      "purl": "pkg:hex/makeup_erlang@1.1.0?checksum=sha256:1cd6780fb1dd1a03979abaed0fe82712b0625118fd5257d3ebbf73f960c73c3c&download_url=https://repo.hex.pm/tarballs/makeup_erlang-1.1.0.tar&vcs_url=https://github.com/elixir-makeup/makeup_erlang",
-      "scope": "required",
+      "purl": "pkg:hex/makeup_erlang@1.1.0?checksum=sha256:1cd6780fb1dd1a03979abaed0fe82712b0625118fd5257d3ebbf73f960c73c3c&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmakeup_erlang-1.1.0.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-makeup%2Fmakeup_erlang",
+      "scope": "excluded",
       "type": "library",
       "version": "1.1.0"
     },
     {
-      "bom-ref": "otp:component:git_ops:hex:12179310",
-      "cpe": "cpe:2.3:a:zachdaniel:git_ops:2.12.2:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:git_ops:hex:119638394",
+      "cpe": "cpe:2.3:a:zachdaniel:git_ops:2.12.3:*:*:*:*:*:*:*",
       "description": "A tool for managing the version and changelog of a project using conventional commits.\n",
       "externalReferences": [
         {
@@ -1193,11 +1193,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "b661d55e2930c9c0712f368167766f9154fe137d42b8bbe2b520a2d756af6314"
+              "content": "4504518bc2f269cc20803e7676d2ec13e578c851bdf886f0c70af75c2d8d4b48"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/git_ops-2.12.2.tar"
+          "url": "https://repo.hex.pm/tarballs/git_ops-2.12.3.tar"
         },
         {
           "comment": "changelog",
@@ -1214,7 +1214,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "b661d55e2930c9c0712f368167766f9154fe137d42b8bbe2b520a2d756af6314"
+          "content": "4504518bc2f269cc20803e7676d2ec13e578c851bdf886f0c70af75c2d8d4b48"
         }
       ],
       "licenses": [
@@ -1226,14 +1226,14 @@
         }
       ],
       "name": "git_ops",
-      "purl": "pkg:hex/git_ops@2.12.2?checksum=sha256:b661d55e2930c9c0712f368167766f9154fe137d42b8bbe2b520a2d756af6314&download_url=https://repo.hex.pm/tarballs/git_ops-2.12.2.tar&vcs_url=https://github.com/zachdaniel/git_ops",
+      "purl": "pkg:hex/git_ops@2.12.3?checksum=sha256:4504518bc2f269cc20803e7676d2ec13e578c851bdf886f0c70af75c2d8d4b48&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fgit_ops-2.12.3.tar&vcs_url=https:%2F%2Fgithub.com%2Fzachdaniel%2Fgit_ops",
       "scope": "excluded",
       "type": "library",
-      "version": "2.12.2"
+      "version": "2.12.3"
     },
     {
-      "bom-ref": "otp:component:crypto:otp:69550612",
-      "cpe": "cpe:2.3:a:erlang:crypto:5.9.2:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:crypto:otp:75923108",
+      "cpe": "cpe:2.3:a:erlang:crypto:5.10:*:*:*:*:*:*:*",
       "description": "CRYPTO",
       "externalReferences": [
         {
@@ -1242,7 +1242,7 @@
         },
         {
           "type": "distribution",
-          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-5.9.2.zip"
+          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-5.10.zip"
         },
         {
           "comment": "github",
@@ -1265,13 +1265,13 @@
         }
       ],
       "name": "crypto",
-      "purl": "pkg:otp/crypto?download_url=https://github.com/erlang/otp/archive/refs/tags/OTP-5.9.2.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/crypto",
+      "purl": "pkg:otp/crypto?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-5.10.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/crypto",
       "scope": "required",
       "type": "library",
-      "version": "5.9.2"
+      "version": "5.10"
     },
     {
-      "bom-ref": "otp:component:nimble_pool:hex:34034329",
+      "bom-ref": "otp:component:nimble_pool:hex:65633765",
       "cpe": "cpe:2.3:a:dashbitco:nimble_pool:1.1.0:*:*:*:*:*:*:*",
       "description": "A tiny resource-pool implementation",
       "externalReferences": [
@@ -1311,13 +1311,13 @@
         }
       ],
       "name": "nimble_pool",
-      "purl": "pkg:hex/nimble_pool@1.1.0?checksum=sha256:af2e4e6b34197db81f7aad230c1118eac993acc0dae6bc83bac0126d4ae0813a&download_url=https://repo.hex.pm/tarballs/nimble_pool-1.1.0.tar&vcs_url=https://github.com/dashbitco/nimble_pool",
+      "purl": "pkg:hex/nimble_pool@1.1.0?checksum=sha256:af2e4e6b34197db81f7aad230c1118eac993acc0dae6bc83bac0126d4ae0813a&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fnimble_pool-1.1.0.tar&vcs_url=https:%2F%2Fgithub.com%2Fdashbitco%2Fnimble_pool",
       "scope": "required",
       "type": "library",
       "version": "1.1.0"
     },
     {
-      "bom-ref": "otp:component:git_cli:hex:42013463",
+      "bom-ref": "otp:component:git_cli:hex:47234494",
       "cpe": "cpe:2.3:a:danhper:git_cli:0.3.0:*:*:*:*:*:*:*",
       "description": "A simple interface to Git CLI",
       "externalReferences": [
@@ -1357,13 +1357,52 @@
         }
       ],
       "name": "git_cli",
-      "purl": "pkg:hex/git_cli@0.3.0?checksum=sha256:78cb952f4c86a41f4d3511f1d3ecb28edb268e3a7df278de2faa1bd4672eaf9b&download_url=https://repo.hex.pm/tarballs/git_cli-0.3.0.tar&vcs_url=https://github.com/danhper/elixir-git-cli",
-      "scope": "required",
+      "purl": "pkg:hex/git_cli@0.3.0?checksum=sha256:78cb952f4c86a41f4d3511f1d3ecb28edb268e3a7df278de2faa1bd4672eaf9b&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fgit_cli-0.3.0.tar&vcs_url=https:%2F%2Fgithub.com%2Fdanhper%2Felixir-git-cli",
+      "scope": "excluded",
       "type": "library",
       "version": "0.3.0"
     },
     {
-      "bom-ref": "otp:component:bandit:hex:8976513",
+      "bom-ref": "otp:component:ssh:otp:75954639",
+      "cpe": "cpe:2.3:a:erlang:ssh:6.0.6:*:*:*:*:*:*:*",
+      "description": "SSH-2 for Erlang/OTP",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/erlang/otp.git#lib/ssh"
+        },
+        {
+          "type": "distribution",
+          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-6.0.6.zip"
+        },
+        {
+          "comment": "github",
+          "type": "vcs",
+          "url": "https://github.com/erlang/otp"
+        },
+        {
+          "comment": "website",
+          "type": "website",
+          "url": "https://www.erlang.org"
+        }
+      ],
+      "group": "erlang.otp",
+      "licenses": [
+        {
+          "license": {
+            "acknowledgement": "declared",
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "ssh",
+      "purl": "pkg:otp/ssh?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-6.0.6.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/ssh",
+      "scope": "excluded",
+      "type": "library",
+      "version": "6.0.6"
+    },
+    {
+      "bom-ref": "otp:component:bandit:hex:39545397",
       "cpe": "cpe:2.3:a:mtrudel:bandit:1.12.5:*:*:*:*:*:*:*",
       "description": "A pure-Elixir HTTP server built for Plug & WebSock apps",
       "externalReferences": [
@@ -1418,13 +1457,13 @@
         }
       ],
       "name": "bandit",
-      "purl": "pkg:hex/bandit@1.12.5?checksum=sha256:c5684ca062fa407cac115aec3256383f3e2ec9fdced7904d59cf5a7bb7ed6181&download_url=https://repo.hex.pm/tarballs/bandit-1.12.5.tar&vcs_url=https://github.com/mtrudel/bandit",
+      "purl": "pkg:hex/bandit@1.12.5?checksum=sha256:c5684ca062fa407cac115aec3256383f3e2ec9fdced7904d59cf5a7bb7ed6181&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fbandit-1.12.5.tar&vcs_url=https:%2F%2Fgithub.com%2Fmtrudel%2Fbandit",
       "scope": "excluded",
       "type": "library",
       "version": "1.12.5"
     },
     {
-      "bom-ref": "otp:component:earmark_parser:hex:104838958",
+      "bom-ref": "otp:component:earmark_parser:hex:99211995",
       "cpe": "cpe:2.3:a:robertdober:earmark_parser:1.4.46:*:*:*:*:*:*:*",
       "description": "AST parser and generator for Markdown",
       "externalReferences": [
@@ -1469,14 +1508,14 @@
         }
       ],
       "name": "earmark_parser",
-      "purl": "pkg:hex/earmark_parser@1.4.46?checksum=sha256:9c44636e8a1c68c62f526b2dcd85d941dbbcee7ab82cf64ba06ce28bef8e89f5&download_url=https://repo.hex.pm/tarballs/earmark_parser-1.4.46.tar&vcs_url=https://github.com/RobertDober/earmark_parser",
-      "scope": "required",
+      "purl": "pkg:hex/earmark_parser@1.4.46?checksum=sha256:9c44636e8a1c68c62f526b2dcd85d941dbbcee7ab82cf64ba06ce28bef8e89f5&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fearmark_parser-1.4.46.tar&vcs_url=https:%2F%2Fgithub.com%2FRobertDober%2Fearmark_parser",
+      "scope": "excluded",
       "type": "library",
       "version": "1.4.46"
     },
     {
-      "bom-ref": "otp:component:makeup:hex:26210935",
-      "cpe": "cpe:2.3:a:elixir-makeup:makeup:1.2.2:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:makeup:hex:113244500",
+      "cpe": "cpe:2.3:a:elixir-makeup:makeup:1.2.3:*:*:*:*:*:*:*",
       "description": "Syntax highlighter for source code in the style of Pygments.\n",
       "externalReferences": [
         {
@@ -1487,11 +1526,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "9a1a24e5b343b8ae16abea0822c10a6f75da27af7fa802ada5251f7579bfccfa"
+              "content": "15970751b7021c2bcd7ed56a54b3def23affd3969fb7c214dffdf28e97ce6f76"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/makeup-1.2.2.tar"
+          "url": "https://repo.hex.pm/tarballs/makeup-1.2.3.tar"
         },
         {
           "comment": "changelog",
@@ -1513,7 +1552,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "9a1a24e5b343b8ae16abea0822c10a6f75da27af7fa802ada5251f7579bfccfa"
+          "content": "15970751b7021c2bcd7ed56a54b3def23affd3969fb7c214dffdf28e97ce6f76"
         }
       ],
       "licenses": [
@@ -1525,13 +1564,13 @@
         }
       ],
       "name": "makeup",
-      "purl": "pkg:hex/makeup@1.2.2?checksum=sha256:9a1a24e5b343b8ae16abea0822c10a6f75da27af7fa802ada5251f7579bfccfa&download_url=https://repo.hex.pm/tarballs/makeup-1.2.2.tar&vcs_url=https://github.com/elixir-makeup/makeup",
-      "scope": "required",
+      "purl": "pkg:hex/makeup@1.2.3?checksum=sha256:15970751b7021c2bcd7ed56a54b3def23affd3969fb7c214dffdf28e97ce6f76&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmakeup-1.2.3.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-makeup%2Fmakeup",
+      "scope": "excluded",
       "type": "library",
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
-      "bom-ref": "otp:component:plug_crypto:hex:78240569",
+      "bom-ref": "otp:component:plug_crypto:hex:8091715",
       "cpe": "cpe:2.3:a:elixir-plug:plug_crypto:2.2.0:*:*:*:*:*:*:*",
       "description": "Crypto-related functionality for the web",
       "externalReferences": [
@@ -1571,14 +1610,14 @@
         }
       ],
       "name": "plug_crypto",
-      "purl": "pkg:hex/plug_crypto@2.2.0?checksum=sha256:83a95744ab1c75876542b6fab135fcc176280e0f301a111c1f757fddcec95d2c&download_url=https://repo.hex.pm/tarballs/plug_crypto-2.2.0.tar&vcs_url=https://github.com/elixir-plug/plug_crypto",
+      "purl": "pkg:hex/plug_crypto@2.2.0?checksum=sha256:83a95744ab1c75876542b6fab135fcc176280e0f301a111c1f757fddcec95d2c&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fplug_crypto-2.2.0.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-plug%2Fplug_crypto",
       "scope": "required",
       "type": "library",
       "version": "2.2.0"
     },
     {
-      "bom-ref": "otp:component:finch:hex:63700879",
-      "cpe": "cpe:2.3:a:sneako:finch:0.23.0:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:finch:hex:74898902",
+      "cpe": "cpe:2.3:a:sneako:finch:0.24.0:*:*:*:*:*:*:*",
       "description": "An HTTP client focused on performance.",
       "externalReferences": [
         {
@@ -1589,11 +1628,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "80e58d3f936f57e3fdf404f83a3642897ae6d9fb642934e46da4d8fe761b99d5"
+              "content": "33ba40069c3587c2f99f9125b766e19dad87d6d54be3c6961db2304df04cef00"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/finch-0.23.0.tar"
+          "url": "https://repo.hex.pm/tarballs/finch-0.24.0.tar"
         },
         {
           "comment": "changelog",
@@ -1610,7 +1649,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "80e58d3f936f57e3fdf404f83a3642897ae6d9fb642934e46da4d8fe761b99d5"
+          "content": "33ba40069c3587c2f99f9125b766e19dad87d6d54be3c6961db2304df04cef00"
         }
       ],
       "licenses": [
@@ -1622,13 +1661,13 @@
         }
       ],
       "name": "finch",
-      "purl": "pkg:hex/finch@0.23.0?checksum=sha256:80e58d3f936f57e3fdf404f83a3642897ae6d9fb642934e46da4d8fe761b99d5&download_url=https://repo.hex.pm/tarballs/finch-0.23.0.tar&vcs_url=https://github.com/sneako/finch",
+      "purl": "pkg:hex/finch@0.24.0?checksum=sha256:33ba40069c3587c2f99f9125b766e19dad87d6d54be3c6961db2304df04cef00&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Ffinch-0.24.0.tar&vcs_url=https:%2F%2Fgithub.com%2Fsneako%2Ffinch",
       "scope": "required",
       "type": "library",
-      "version": "0.23.0"
+      "version": "0.24.0"
     },
     {
-      "bom-ref": "otp:component:mint_web_socket:hex:91229639",
+      "bom-ref": "otp:component:mint_web_socket:hex:103758469",
       "cpe": "cpe:2.3:a:elixir-mint:mint_web_socket:1.0.6:*:*:*:*:*:*:*",
       "description": "HTTP/1 and HTTP/2 WebSocket support for Mint",
       "externalReferences": [
@@ -1673,13 +1712,13 @@
         }
       ],
       "name": "mint_web_socket",
-      "purl": "pkg:hex/mint_web_socket@1.0.6?checksum=sha256:0c360e9012413f1c115a63532601eb5d63731aab7010949178769760686c1698&download_url=https://repo.hex.pm/tarballs/mint_web_socket-1.0.6.tar&vcs_url=https://github.com/elixir-mint/mint_web_socket",
+      "purl": "pkg:hex/mint_web_socket@1.0.6?checksum=sha256:0c360e9012413f1c115a63532601eb5d63731aab7010949178769760686c1698&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmint_web_socket-1.0.6.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-mint%2Fmint_web_socket",
       "scope": "required",
       "type": "library",
       "version": "1.0.6"
     },
     {
-      "bom-ref": "otp:component:file_system:hex:5267745",
+      "bom-ref": "otp:component:file_system:hex:19985144",
       "cpe": "cpe:2.3:a:falood:file_system:1.1.1:*:*:*:*:*:*:*",
       "description": "An Elixir file system change watcher wrapper based on FS, the native file\nsystem listener.\n",
       "externalReferences": [
@@ -1719,13 +1758,13 @@
         }
       ],
       "name": "file_system",
-      "purl": "pkg:hex/file_system@1.1.1?checksum=sha256:7a15ff97dfe526aeefb090a7a9d3d03aa907e100e262a0f8f7746b78f8f87a5d&download_url=https://repo.hex.pm/tarballs/file_system-1.1.1.tar&vcs_url=https://github.com/falood/file_system",
-      "scope": "required",
+      "purl": "pkg:hex/file_system@1.1.1?checksum=sha256:7a15ff97dfe526aeefb090a7a9d3d03aa907e100e262a0f8f7746b78f8f87a5d&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Ffile_system-1.1.1.tar&vcs_url=https:%2F%2Fgithub.com%2Ffalood%2Ffile_system",
+      "scope": "excluded",
       "type": "library",
       "version": "1.1.1"
     },
     {
-      "bom-ref": "otp:component:erlex:hex:97046561",
+      "bom-ref": "otp:component:erlex:hex:12295183",
       "cpe": "cpe:2.3:a:christhekeele:erlex:0.2.9:*:*:*:*:*:*:*",
       "description": "Convert Erlang style structs and error messages to equivalent Elixir.",
       "externalReferences": [
@@ -1770,13 +1809,13 @@
         }
       ],
       "name": "erlex",
-      "purl": "pkg:hex/erlex@0.2.9?checksum=sha256:8cfffc0ec7159e6d73de2ab28a588064de80f88b2798d5cbe4482cbbc200178b&download_url=https://repo.hex.pm/tarballs/erlex-0.2.9.tar&vcs_url=https://github.com/christhekeele/erlex",
-      "scope": "required",
+      "purl": "pkg:hex/erlex@0.2.9?checksum=sha256:8cfffc0ec7159e6d73de2ab28a588064de80f88b2798d5cbe4482cbbc200178b&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Ferlex-0.2.9.tar&vcs_url=https:%2F%2Fgithub.com%2Fchristhekeele%2Ferlex",
+      "scope": "excluded",
       "type": "library",
       "version": "0.2.9"
     },
     {
-      "bom-ref": "otp:component:jason:hex:87655102",
+      "bom-ref": "otp:component:jason:hex:102454825",
       "cpe": "cpe:2.3:a:michalmuskala:jason:1.4.5:*:*:*:*:*:*:*",
       "description": "A blazing fast JSON parser and generator in pure Elixir.\n",
       "externalReferences": [
@@ -1816,14 +1855,14 @@
         }
       ],
       "name": "jason",
-      "purl": "pkg:hex/jason@1.4.5?checksum=sha256:b0c823996102bcd0239b3c2444eb00409b72f6a140c1950bc8b457d836b30684&download_url=https://repo.hex.pm/tarballs/jason-1.4.5.tar&vcs_url=https://github.com/michalmuskala/jason",
+      "purl": "pkg:hex/jason@1.4.5?checksum=sha256:b0c823996102bcd0239b3c2444eb00409b72f6a140c1950bc8b457d836b30684&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fjason-1.4.5.tar&vcs_url=https:%2F%2Fgithub.com%2Fmichalmuskala%2Fjason",
       "scope": "required",
       "type": "library",
       "version": "1.4.5"
     },
     {
-      "bom-ref": "otp:component:hex_core:hex:65565843",
-      "cpe": "cpe:2.3:a:hex:hex_core:0.15.0:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:hex_core:hex:35126270",
+      "cpe": "cpe:2.3:a:hex:hex_core:0.19.0:*:*:*:*:*:*:*",
       "description": "Reference implementation of Hex specifications",
       "externalReferences": [
         {
@@ -1834,16 +1873,16 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "c2093764c7af8ef0818c104fa141eba431e7be93f8374638c45c7037b26a52f8"
+              "content": "c2cc414f3893a7edbcab28207cadca13829407abe41f689c82f379fe22f026a5"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/hex_core-0.15.0.tar"
+          "url": "https://repo.hex.pm/tarballs/hex_core-0.19.0.tar"
         },
         {
           "comment": "docs",
           "type": "documentation",
-          "url": "https://hex-core.hexdocs.pm/0.15.0/"
+          "url": "https://hex-core.hexdocs.pm/0.19.0/"
         },
         {
           "comment": "github",
@@ -1858,14 +1897,14 @@
         {
           "comment": "homepage",
           "type": "website",
-          "url": "https://hex.pm/packages/hex_core/0.15.0"
+          "url": "https://hex.pm/packages/hex_core/0.19.0"
         }
       ],
       "group": "hexpm",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "c2093764c7af8ef0818c104fa141eba431e7be93f8374638c45c7037b26a52f8"
+          "content": "c2cc414f3893a7edbcab28207cadca13829407abe41f689c82f379fe22f026a5"
         }
       ],
       "licenses": [
@@ -1877,13 +1916,13 @@
         }
       ],
       "name": "hex_core",
-      "purl": "pkg:hex/hex_core@0.15.0?checksum=sha256:c2093764c7af8ef0818c104fa141eba431e7be93f8374638c45c7037b26a52f8&download_url=https://repo.hex.pm/tarballs/hex_core-0.15.0.tar&vcs_url=https://github.com/hexpm/hex_core",
-      "scope": "required",
+      "purl": "pkg:hex/hex_core@0.19.0?checksum=sha256:c2cc414f3893a7edbcab28207cadca13829407abe41f689c82f379fe22f026a5&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fhex_core-0.19.0.tar&vcs_url=https:%2F%2Fgithub.com%2Fhexpm%2Fhex_core",
+      "scope": "excluded",
       "type": "library",
-      "version": "0.15.0"
+      "version": "0.19.0"
     },
     {
-      "bom-ref": "otp:component:nimble_parsec:hex:48420652",
+      "bom-ref": "otp:component:nimble_parsec:hex:20261443",
       "cpe": "cpe:2.3:a:dashbitco:nimble_parsec:1.4.2:*:*:*:*:*:*:*",
       "description": "A simple and fast library for text-based parser combinators",
       "externalReferences": [
@@ -1923,14 +1962,14 @@
         }
       ],
       "name": "nimble_parsec",
-      "purl": "pkg:hex/nimble_parsec@1.4.2?checksum=sha256:4b21398942dda052b403bbe1da991ccd03a053668d147d53fb8c4e0efe09c973&download_url=https://repo.hex.pm/tarballs/nimble_parsec-1.4.2.tar&vcs_url=https://github.com/dashbitco/nimble_parsec",
-      "scope": "required",
+      "purl": "pkg:hex/nimble_parsec@1.4.2?checksum=sha256:4b21398942dda052b403bbe1da991ccd03a053668d147d53fb8c4e0efe09c973&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fnimble_parsec-1.4.2.tar&vcs_url=https:%2F%2Fgithub.com%2Fdashbitco%2Fnimble_parsec",
+      "scope": "excluded",
       "type": "library",
       "version": "1.4.2"
     },
     {
-      "bom-ref": "otp:component:req:hex:41648200",
-      "cpe": "cpe:2.3:a:wojtekmach:req:0.7.4:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:req:hex:8643612",
+      "cpe": "cpe:2.3:a:wojtekmach:req:0.7.5:*:*:*:*:*:*:*",
       "description": "Req is a batteries-included HTTP client for Elixir.",
       "externalReferences": [
         {
@@ -1941,11 +1980,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "4b192d63253e8dcc6221ef992ea9ebef7d3555166e8423aa5b553e86bc3c69a2"
+              "content": "576853c4bf403faa3c1fa5d093e0759227083b78f8a6864c67d62c0a9c45514d"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/req-0.7.4.tar"
+          "url": "https://repo.hex.pm/tarballs/req-0.7.5.tar"
         },
         {
           "comment": "changelog",
@@ -1962,7 +2001,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "4b192d63253e8dcc6221ef992ea9ebef7d3555166e8423aa5b553e86bc3c69a2"
+          "content": "576853c4bf403faa3c1fa5d093e0759227083b78f8a6864c67d62c0a9c45514d"
         }
       ],
       "licenses": [
@@ -1974,14 +2013,14 @@
         }
       ],
       "name": "req",
-      "purl": "pkg:hex/req@0.7.4?checksum=sha256:4b192d63253e8dcc6221ef992ea9ebef7d3555166e8423aa5b553e86bc3c69a2&download_url=https://repo.hex.pm/tarballs/req-0.7.4.tar&vcs_url=https://github.com/wojtekmach/req",
-      "scope": "required",
+      "purl": "pkg:hex/req@0.7.5?checksum=sha256:576853c4bf403faa3c1fa5d093e0759227083b78f8a6864c67d62c0a9c45514d&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Freq-0.7.5.tar&vcs_url=https:%2F%2Fgithub.com%2Fwojtekmach%2Freq",
+      "scope": "excluded",
       "type": "library",
-      "version": "0.7.4"
+      "version": "0.7.5"
     },
     {
-      "bom-ref": "otp:component:ex_doc:hex:3052568",
-      "cpe": "cpe:2.3:a:elixir-lang:ex_doc:0.40.3:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:ex_doc:hex:32777396",
+      "cpe": "cpe:2.3:a:elixir-lang:ex_doc:0.40.4:*:*:*:*:*:*:*",
       "description": "ExDoc is a documentation generation tool for Elixir",
       "externalReferences": [
         {
@@ -1992,11 +2031,11 @@
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "2756e357742fecd9749b489b85d67c9ce99c465f2e75728d9e6dc8d704b973de"
+              "content": "6222b9e423d76584ee34df2c82a5ed72c2d53dc153f7f483ad28b378694186cc"
             }
           ],
           "type": "distribution",
-          "url": "https://repo.hex.pm/tarballs/ex_doc-0.40.3.tar"
+          "url": "https://repo.hex.pm/tarballs/ex_doc-0.40.4.tar"
         },
         {
           "comment": "changelog",
@@ -2018,7 +2057,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "2756e357742fecd9749b489b85d67c9ce99c465f2e75728d9e6dc8d704b973de"
+          "content": "6222b9e423d76584ee34df2c82a5ed72c2d53dc153f7f483ad28b378694186cc"
         }
       ],
       "licenses": [
@@ -2030,14 +2069,14 @@
         }
       ],
       "name": "ex_doc",
-      "purl": "pkg:hex/ex_doc@0.40.3?checksum=sha256:2756e357742fecd9749b489b85d67c9ce99c465f2e75728d9e6dc8d704b973de&download_url=https://repo.hex.pm/tarballs/ex_doc-0.40.3.tar&vcs_url=https://github.com/elixir-lang/ex_doc",
+      "purl": "pkg:hex/ex_doc@0.40.4?checksum=sha256:6222b9e423d76584ee34df2c82a5ed72c2d53dc153f7f483ad28b378694186cc&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fex_doc-0.40.4.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-lang%2Fex_doc",
       "scope": "excluded",
       "type": "library",
-      "version": "0.40.3"
+      "version": "0.40.4"
     },
     {
-      "bom-ref": "otp:component:stdlib:otp:33644561",
-      "cpe": "cpe:2.3:a:erlang:stdlib:8.0.3:*:*:*:*:*:*:*",
+      "bom-ref": "otp:component:stdlib:otp:126969020",
+      "cpe": "cpe:2.3:a:erlang:stdlib:8.1:*:*:*:*:*:*:*",
       "description": "ERTS  CXC 138 10",
       "externalReferences": [
         {
@@ -2046,7 +2085,7 @@
         },
         {
           "type": "distribution",
-          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-8.0.3.zip"
+          "url": "https://github.com/erlang/otp/archive/refs/tags/OTP-8.1.zip"
         },
         {
           "comment": "github",
@@ -2069,13 +2108,13 @@
         }
       ],
       "name": "stdlib",
-      "purl": "pkg:otp/stdlib?download_url=https://github.com/erlang/otp/archive/refs/tags/OTP-8.0.3.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/stdlib",
+      "purl": "pkg:otp/stdlib?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-8.1.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/stdlib",
       "scope": "required",
       "type": "library",
-      "version": "8.0.3"
+      "version": "8.1"
     },
     {
-      "bom-ref": "otp:component:websock_adapter:hex:16123157",
+      "bom-ref": "otp:component:websock_adapter:hex:95378882",
       "cpe": "cpe:2.3:a:phoenixframework:websock_adapter:0.6.0:*:*:*:*:*:*:*",
       "description": "A set of WebSock adapters for common web servers",
       "externalReferences": [
@@ -2125,13 +2164,13 @@
         }
       ],
       "name": "websock_adapter",
-      "purl": "pkg:hex/websock_adapter@0.6.0?checksum=sha256:50021a85bce8f203b086705d9e0c5415e2c7eb05d319111b0428fe71f9934617&download_url=https://repo.hex.pm/tarballs/websock_adapter-0.6.0.tar&vcs_url=https://github.com/phoenixframework/websock_adapter",
+      "purl": "pkg:hex/websock_adapter@0.6.0?checksum=sha256:50021a85bce8f203b086705d9e0c5415e2c7eb05d319111b0428fe71f9934617&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fwebsock_adapter-0.6.0.tar&vcs_url=https:%2F%2Fgithub.com%2Fphoenixframework%2Fwebsock_adapter",
       "scope": "excluded",
       "type": "library",
       "version": "0.6.0"
     },
     {
-      "bom-ref": "otp:component:mime:hex:92200854",
+      "bom-ref": "otp:component:mime:hex:25825086",
       "cpe": "cpe:2.3:a:elixir-plug:mime:2.0.7:*:*:*:*:*:*:*",
       "description": "A MIME type module for Elixir",
       "externalReferences": [
@@ -2171,13 +2210,13 @@
         }
       ],
       "name": "mime",
-      "purl": "pkg:hex/mime@2.0.7?checksum=sha256:6171188e399ee16023ffc5b76ce445eb6d9672e2e241d2df6050f3c771e80ccd&download_url=https://repo.hex.pm/tarballs/mime-2.0.7.tar&vcs_url=https://github.com/elixir-plug/mime",
+      "purl": "pkg:hex/mime@2.0.7?checksum=sha256:6171188e399ee16023ffc5b76ce445eb6d9672e2e241d2df6050f3c771e80ccd&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fmime-2.0.7.tar&vcs_url=https:%2F%2Fgithub.com%2Felixir-plug%2Fmime",
       "scope": "required",
       "type": "library",
       "version": "2.0.7"
     },
     {
-      "bom-ref": "otp:component:optimus:hex:124476107",
+      "bom-ref": "otp:component:optimus:hex:115036031",
       "cpe": "cpe:2.3:a:savonarola:optimus:0.6.1:*:*:*:*:*:*:*",
       "description": "Command line option parser inspired by clap.rs",
       "externalReferences": [
@@ -2217,13 +2256,13 @@
         }
       ],
       "name": "optimus",
-      "purl": "pkg:hex/optimus@0.6.1?checksum=sha256:c0db4107a51f5af94de8b05e4208333ebb8016a3bfdbcd74df6e5c99829db17f&download_url=https://repo.hex.pm/tarballs/optimus-0.6.1.tar&vcs_url=https://github.com/savonarola/optimus",
-      "scope": "required",
+      "purl": "pkg:hex/optimus@0.6.1?checksum=sha256:c0db4107a51f5af94de8b05e4208333ebb8016a3bfdbcd74df6e5c99829db17f&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Foptimus-0.6.1.tar&vcs_url=https:%2F%2Fgithub.com%2Fsavonarola%2Foptimus",
+      "scope": "excluded",
       "type": "library",
       "version": "0.6.1"
     },
     {
-      "bom-ref": "otp:component:xmerl:otp:64702251",
+      "bom-ref": "otp:component:xmerl:otp:88902769",
       "cpe": "cpe:2.3:a:erlang:xmerl:2.2:*:*:*:*:*:*:*",
       "description": "XML parser",
       "externalReferences": [
@@ -2256,13 +2295,13 @@
         }
       ],
       "name": "xmerl",
-      "purl": "pkg:otp/xmerl?download_url=https://github.com/erlang/otp/archive/refs/tags/OTP-2.2.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/xmerl",
-      "scope": "required",
+      "purl": "pkg:otp/xmerl?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Ftags%2FOTP-2.2.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/xmerl",
+      "scope": "excluded",
       "type": "library",
       "version": "2.2"
     },
     {
-      "bom-ref": "otp:component:telemetry:hex:111137185",
+      "bom-ref": "otp:component:telemetry:hex:132739312",
       "cpe": "cpe:2.3:a:beam-telemetry:telemetry:1.4.2:*:*:*:*:*:*:*",
       "description": "Dynamic dispatching library for metrics and instrumentations",
       "externalReferences": [
@@ -2312,13 +2351,13 @@
         }
       ],
       "name": "telemetry",
-      "purl": "pkg:hex/telemetry@1.4.2?checksum=sha256:928f6495066506077862c0d1646609eed891a4326bee3126ba54b60af61febb1&download_url=https://repo.hex.pm/tarballs/telemetry-1.4.2.tar&vcs_url=https://github.com/beam-telemetry/telemetry",
+      "purl": "pkg:hex/telemetry@1.4.2?checksum=sha256:928f6495066506077862c0d1646609eed891a4326bee3126ba54b60af61febb1&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Ftelemetry-1.4.2.tar&vcs_url=https:%2F%2Fgithub.com%2Fbeam-telemetry%2Ftelemetry",
       "scope": "required",
       "type": "library",
       "version": "1.4.2"
     },
     {
-      "bom-ref": "otp:component:credo:hex:95473491",
+      "bom-ref": "otp:component:credo:hex:8906107",
       "cpe": "cpe:2.3:a:rrrene:credo:1.7.19:*:*:*:*:*:*:*",
       "description": "A static code analysis tool with a focus on code consistency and teaching.",
       "externalReferences": [
@@ -2363,13 +2402,13 @@
         }
       ],
       "name": "credo",
-      "purl": "pkg:hex/credo@1.7.19?checksum=sha256:2d8bc95d5a7bb99dd2613621d4f08c6a3575c3fd4b62e6a2b48a100352a557b8&download_url=https://repo.hex.pm/tarballs/credo-1.7.19.tar&vcs_url=https://github.com/rrrene/credo",
+      "purl": "pkg:hex/credo@1.7.19?checksum=sha256:2d8bc95d5a7bb99dd2613621d4f08c6a3575c3fd4b62e6a2b48a100352a557b8&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fcredo-1.7.19.tar&vcs_url=https:%2F%2Fgithub.com%2Frrrene%2Fcredo",
       "scope": "excluded",
       "type": "library",
       "version": "1.7.19"
     },
     {
-      "bom-ref": "otp:component:dialyzer:otp:116986873",
+      "bom-ref": "otp:component:dialyzer:otp:101863772",
       "cpe": "cpe:2.3:a:erlang:dialyzer:*:*:*:*:*:*:*:*",
       "externalReferences": [
         {
@@ -2401,12 +2440,12 @@
         }
       ],
       "name": "dialyzer",
-      "purl": "pkg:otp/dialyzer?download_url=https://github.com/erlang/otp/archive/refs/heads/master.zip&repository_url=https://github.com/erlang/otp&vcs_url=git%2Bhttps://github.com/erlang/otp.git#lib/dialyzer",
-      "scope": "required",
+      "purl": "pkg:otp/dialyzer?download_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp%2Farchive%2Frefs%2Fheads%2Fmaster.zip&repository_url=https:%2F%2Fgithub.com%2Ferlang%2Fotp&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2Ferlang%2Fotp.git#lib/dialyzer",
+      "scope": "excluded",
       "type": "library"
     },
     {
-      "bom-ref": "otp:component:excoveralls:hex:39185539",
+      "bom-ref": "otp:component:excoveralls:hex:29166415",
       "cpe": "cpe:2.3:a:parroty:excoveralls:0.18.5:*:*:*:*:*:*:*",
       "description": "Coverage report tool for Elixir with coveralls.io integration.",
       "externalReferences": [
@@ -2461,13 +2500,13 @@
         }
       ],
       "name": "excoveralls",
-      "purl": "pkg:hex/excoveralls@0.18.5?checksum=sha256:523fe8a15603f86d64852aab2abe8ddbd78e68579c8525ae765facc5eae01562&download_url=https://repo.hex.pm/tarballs/excoveralls-0.18.5.tar&vcs_url=https://github.com/parroty/excoveralls",
+      "purl": "pkg:hex/excoveralls@0.18.5?checksum=sha256:523fe8a15603f86d64852aab2abe8ddbd78e68579c8525ae765facc5eae01562&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fexcoveralls-0.18.5.tar&vcs_url=https:%2F%2Fgithub.com%2Fparroty%2Fexcoveralls",
       "scope": "excluded",
       "type": "library",
       "version": "0.18.5"
     },
     {
-      "bom-ref": "otp:component:thousand_island:hex:46742362",
+      "bom-ref": "otp:component:thousand_island:hex:43785315",
       "cpe": "cpe:2.3:a:mtrudel:thousand_island:1.5.0:*:*:*:*:*:*:*",
       "description": "A simple & modern pure Elixir socket server",
       "externalReferences": [
@@ -2522,7 +2561,7 @@
         }
       ],
       "name": "thousand_island",
-      "purl": "pkg:hex/thousand_island@1.5.0?checksum=sha256:708923d40523e43cf99041ab37a0d4b0ec426ac6438fa3716ab23d919eaeb412&download_url=https://repo.hex.pm/tarballs/thousand_island-1.5.0.tar&vcs_url=https://github.com/mtrudel/thousand_island",
+      "purl": "pkg:hex/thousand_island@1.5.0?checksum=sha256:708923d40523e43cf99041ab37a0d4b0ec426ac6438fa3716ab23d919eaeb412&download_url=https:%2F%2Frepo.hex.pm%2Ftarballs%2Fthousand_island-1.5.0.tar&vcs_url=https:%2F%2Fgithub.com%2Fmtrudel%2Fthousand_island",
       "scope": "required",
       "type": "library",
       "version": "1.5.0"
@@ -2531,419 +2570,421 @@
   "dependencies": [
     {
       "dependsOn": [
-        "otp:component:jason:hex:87655102",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478",
-        "otp:component:eex:otp:45483983"
+        "otp:component:jason:hex:102454825",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656",
+        "otp:component:eex:otp:33774477"
       ],
-      "ref": "otp:component:protobuf:hex:31621765"
+      "ref": "otp:component:protobuf:hex:88750128"
     },
     {
       "dependsOn": [
-        "otp:component:erlex:hex:97046561",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:dialyzer:otp:116986873",
-        "otp:component:crypto:otp:69550612",
-        "otp:component:mix:otp:47854094",
-        "otp:component:erts:otp:112605601",
-        "otp:component:syntax_tools:otp:25983030",
-        "otp:component:logger:otp:72055478"
+        "otp:component:erlex:hex:12295183",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:dialyzer:otp:101863772",
+        "otp:component:crypto:otp:75923108",
+        "otp:component:mix:otp:19602035",
+        "otp:component:erts:otp:78852026",
+        "otp:component:syntax_tools:otp:55750255",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:dialyxir:hex:88810649"
+      "ref": "otp:component:dialyxir:hex:67555736"
     },
-    { "ref": "otp:component:mix:otp:47854094" },
-    { "ref": "otp:component:nimble_ownership:hex:131509519" },
+    { "ref": "otp:component:mix:otp:19602035" },
+    { "ref": "otp:component:nimble_ownership:hex:116515284" },
     {
       "dependsOn": [
-        "otp:component:nimble_ownership:hex:131509519"
+        "otp:component:nimble_ownership:hex:116515284"
       ],
-      "ref": "otp:component:mox:hex:133772067"
+      "ref": "otp:component:mox:hex:21188532"
     },
-    { "ref": "otp:component:eex:otp:45483983" },
-    { "ref": "otp:component:websock:hex:95532479" },
+    { "ref": "otp:component:eex:otp:33774477" },
+    { "ref": "otp:component:websock:hex:3898161" },
     {
       "dependsOn": [
-        "otp:component:hex_core:hex:65565843",
-        "otp:component:jason:hex:87655102",
-        "otp:component:optimus:hex:124476107",
-        "otp:component:protobuf:hex:31621765",
-        "otp:component:purl:hex:34644079",
-        "otp:component:hex:otp:256814",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:mix:otp:47854094",
-        "otp:component:xmerl:otp:64702251",
-        "otp:component:logger:otp:72055478"
+        "otp:component:hex_core:hex:35126270",
+        "otp:component:jason:hex:102454825",
+        "otp:component:optimus:hex:115036031",
+        "otp:component:protobuf:hex:88750128",
+        "otp:component:purl:hex:127504337",
+        "otp:component:hex:otp:65340933",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:mix:otp:19602035",
+        "otp:component:xmerl:otp:88902769",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:sbom:hex:84832432"
+      "ref": "otp:component:sbom:hex:74113482"
     },
-    { "ref": "otp:component:hex:otp:256814" },
+    { "ref": "otp:component:hex:otp:65340933" },
     {
       "dependsOn": [
-        "otp:component:hpax:hex:13049320",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478",
-        "otp:component:ssl:otp:131716903"
+        "otp:component:hpax:hex:55468305",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656",
+        "otp:component:ssl:otp:56148158"
       ],
-      "ref": "otp:component:mint:hex:82086386"
+      "ref": "otp:component:mint:hex:11187727"
     },
-    { "ref": "otp:component:ssl:otp:131716903" },
+    { "ref": "otp:component:ssl:otp:56148158" },
     {
       "dependsOn": [
-        "otp:component:mime:hex:92200854",
-        "otp:component:plug_crypto:hex:78240569",
-        "otp:component:telemetry:hex:111137185",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478",
-        "otp:component:eex:otp:45483983"
+        "otp:component:mime:hex:25825086",
+        "otp:component:plug_crypto:hex:8091715",
+        "otp:component:telemetry:hex:132739312",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656",
+        "otp:component:eex:otp:33774477"
       ],
-      "ref": "otp:component:plug:hex:15594346"
+      "ref": "otp:component:plug:hex:123091062"
     },
-    { "ref": "otp:component:logger:otp:72055478" },
-    { "ref": "otp:component:inets:otp:121672126" },
-    { "ref": "otp:component:erts:otp:112605601" },
-    { "ref": "otp:component:syntax_tools:otp:25983030" },
+    { "ref": "otp:component:logger:otp:112940656" },
+    { "ref": "otp:component:inets:otp:2772139" },
+    { "ref": "otp:component:erts:otp:78852026" },
+    { "ref": "otp:component:syntax_tools:otp:55750255" },
     {
       "dependsOn": [
-        "otp:component:stdlib:otp:33644561"
+        "otp:component:stdlib:otp:126969020"
       ],
-      "ref": "otp:component:elixir:otp:91030763"
+      "ref": "otp:component:elixir:otp:50056156"
     },
-    { "ref": "otp:component:kernel:otp:41009003" },
-    { "ref": "otp:component:ex_unit:otp:106830735" },
+    { "ref": "otp:component:kernel:otp:73337799" },
+    { "ref": "otp:component:ex_unit:otp:78841851" },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:nimble_options:hex:39936919"
-    },
-    {
-      "dependsOn": [
-        "otp:component:makeup:hex:26210935",
-        "otp:component:nimble_parsec:hex:48420652",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
-      ],
-      "ref": "otp:component:makeup_elixir:hex:91535187"
+      "ref": "otp:component:nimble_options:hex:24609547"
     },
     {
       "dependsOn": [
-        "otp:component:finch:hex:63700879",
-        "otp:component:jason:hex:87655102",
-        "otp:component:mime:hex:92200854",
-        "otp:component:mint:hex:82086386",
-        "otp:component:telemetry:hex:111137185",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478",
-        "otp:component:ssl:otp:131716903",
-        "otp:component:inets:otp:121672126",
-        "otp:component:mox:hex:133772067"
+        "otp:component:makeup:hex:113244500",
+        "otp:component:nimble_parsec:hex:20261443",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:tesla:hex:106181469"
+      "ref": "otp:component:makeup_elixir:hex:114523590"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:finch:hex:74898902",
+        "otp:component:jason:hex:102454825",
+        "otp:component:mime:hex:25825086",
+        "otp:component:mint:hex:11187727",
+        "otp:component:telemetry:hex:132739312",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656",
+        "otp:component:ssl:otp:56148158",
+        "otp:component:inets:otp:2772139",
+        "otp:component:mox:hex:21188532"
       ],
-      "ref": "otp:component:purl:hex:34644079"
+      "ref": "otp:component:tesla:hex:41657042"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:bunt:hex:49979295"
+      "ref": "otp:component:purl:hex:127504337"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:hpax:hex:13049320"
+      "ref": "otp:component:bunt:hex:84001713"
     },
     {
       "dependsOn": [
-        "otp:component:makeup:hex:26210935",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:makeup_erlang:hex:89517532"
+      "ref": "otp:component:hpax:hex:55468305"
     },
     {
       "dependsOn": [
-        "otp:component:git_cli:hex:42013463",
-        "otp:component:jason:hex:87655102",
-        "otp:component:nimble_parsec:hex:48420652",
-        "otp:component:req:hex:41648200",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:makeup:hex:113244500",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:git_ops:hex:12179310"
+      "ref": "otp:component:makeup_erlang:hex:12113811"
     },
     {
       "dependsOn": [
-        "otp:component:logger:otp:72055478",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:tesla:hex:106181469",
-        "otp:component:finch:hex:63700879",
-        "otp:component:mint_web_socket:hex:91229639",
-        "otp:component:telemetry:hex:111137185",
-        "otp:component:plug:hex:15594346",
-        "otp:component:ex_doc:hex:3052568",
-        "otp:component:excoveralls:hex:39185539",
-        "otp:component:credo:hex:95473491",
-        "otp:component:dialyxir:hex:88810649",
-        "otp:component:git_ops:hex:12179310",
-        "otp:component:sbom:hex:84832432",
-        "otp:component:mox:hex:133772067",
-        "otp:component:bandit:hex:8976513",
-        "otp:component:websock_adapter:hex:16123157"
+        "otp:component:git_cli:hex:47234494",
+        "otp:component:jason:hex:102454825",
+        "otp:component:nimble_parsec:hex:20261443",
+        "otp:component:req:hex:8643612",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:ex_daytona:github:52732362"
-    },
-    { "ref": "otp:component:crypto:otp:69550612" },
-    {
-      "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
-      ],
-      "ref": "otp:component:nimble_pool:hex:34034329"
+      "ref": "otp:component:git_ops:hex:119638394"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:logger:otp:112940656",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:tesla:hex:41657042",
+        "otp:component:finch:hex:74898902",
+        "otp:component:mint_web_socket:hex:103758469",
+        "otp:component:telemetry:hex:132739312",
+        "otp:component:plug:hex:123091062",
+        "otp:component:ex_doc:hex:32777396",
+        "otp:component:excoveralls:hex:29166415",
+        "otp:component:credo:hex:8906107",
+        "otp:component:dialyxir:hex:67555736",
+        "otp:component:git_ops:hex:119638394",
+        "otp:component:sbom:hex:74113482",
+        "otp:component:mox:hex:21188532",
+        "otp:component:bandit:hex:39545397",
+        "otp:component:websock_adapter:hex:95378882"
       ],
-      "ref": "otp:component:git_cli:hex:42013463"
+      "ref": "otp:component:ex_daytona:github:53704919"
+    },
+    { "ref": "otp:component:crypto:otp:75923108" },
+    {
+      "dependsOn": [
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
+      ],
+      "ref": "otp:component:nimble_pool:hex:65633765"
     },
     {
       "dependsOn": [
-        "otp:component:hpax:hex:13049320",
-        "otp:component:plug:hex:15594346",
-        "otp:component:telemetry:hex:111137185",
-        "otp:component:thousand_island:hex:46742362",
-        "otp:component:websock:hex:95532479"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:bandit:hex:8976513"
+      "ref": "otp:component:git_cli:hex:47234494"
+    },
+    { "ref": "otp:component:ssh:otp:75954639" },
+    {
+      "dependsOn": [
+        "otp:component:hpax:hex:55468305",
+        "otp:component:plug:hex:123091062",
+        "otp:component:telemetry:hex:132739312",
+        "otp:component:thousand_island:hex:43785315",
+        "otp:component:websock:hex:3898161"
+      ],
+      "ref": "otp:component:bandit:hex:39545397"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:earmark_parser:hex:104838958"
+      "ref": "otp:component:earmark_parser:hex:99211995"
     },
     {
       "dependsOn": [
-        "otp:component:nimble_parsec:hex:48420652",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:eex:otp:45483983"
+        "otp:component:nimble_parsec:hex:20261443",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:eex:otp:33774477"
       ],
-      "ref": "otp:component:makeup:hex:26210935"
+      "ref": "otp:component:makeup:hex:113244500"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:crypto:otp:69550612"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:crypto:otp:75923108"
       ],
-      "ref": "otp:component:plug_crypto:hex:78240569"
+      "ref": "otp:component:plug_crypto:hex:8091715"
     },
     {
       "dependsOn": [
-        "otp:component:mime:hex:92200854",
-        "otp:component:mint:hex:82086386",
-        "otp:component:nimble_options:hex:39936919",
-        "otp:component:nimble_pool:hex:34034329",
-        "otp:component:telemetry:hex:111137185",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:mime:hex:25825086",
+        "otp:component:mint:hex:11187727",
+        "otp:component:nimble_options:hex:24609547",
+        "otp:component:nimble_pool:hex:65633765",
+        "otp:component:telemetry:hex:132739312",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:finch:hex:63700879"
+      "ref": "otp:component:finch:hex:74898902"
     },
     {
       "dependsOn": [
-        "otp:component:mint:hex:82086386",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:mint:hex:11187727",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:mint_web_socket:hex:91229639"
+      "ref": "otp:component:mint_web_socket:hex:103758469"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:file_system:hex:5267745"
+      "ref": "otp:component:file_system:hex:19985144"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:erlex:hex:97046561"
+      "ref": "otp:component:erlex:hex:12295183"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:jason:hex:87655102"
+      "ref": "otp:component:jason:hex:102454825"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:inets:otp:121672126",
-        "otp:component:ssl:otp:131716903"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:inets:otp:2772139",
+        "otp:component:ssl:otp:56148158",
+        "otp:component:ssh:otp:75954639"
       ],
-      "ref": "otp:component:hex_core:hex:65565843"
+      "ref": "otp:component:hex_core:hex:35126270"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156"
       ],
-      "ref": "otp:component:nimble_parsec:hex:48420652"
+      "ref": "otp:component:nimble_parsec:hex:20261443"
     },
     {
       "dependsOn": [
-        "otp:component:finch:hex:63700879",
-        "otp:component:jason:hex:87655102",
-        "otp:component:mime:hex:92200854",
-        "otp:component:plug:hex:15594346",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:finch:hex:74898902",
+        "otp:component:jason:hex:102454825",
+        "otp:component:mime:hex:25825086",
+        "otp:component:plug:hex:123091062",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:req:hex:41648200"
+      "ref": "otp:component:req:hex:8643612"
     },
     {
       "dependsOn": [
-        "otp:component:earmark_parser:hex:104838958",
-        "otp:component:makeup_elixir:hex:91535187",
-        "otp:component:makeup_erlang:hex:89517532",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:eex:otp:45483983"
+        "otp:component:earmark_parser:hex:99211995",
+        "otp:component:makeup_elixir:hex:114523590",
+        "otp:component:makeup_erlang:hex:12113811",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:eex:otp:33774477"
       ],
-      "ref": "otp:component:ex_doc:hex:3052568"
+      "ref": "otp:component:ex_doc:hex:32777396"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003"
+        "otp:component:kernel:otp:73337799"
       ],
-      "ref": "otp:component:stdlib:otp:33644561"
+      "ref": "otp:component:stdlib:otp:126969020"
     },
     {
       "dependsOn": [
-        "otp:component:bandit:hex:8976513",
-        "otp:component:plug:hex:15594346",
-        "otp:component:websock:hex:95532479"
+        "otp:component:bandit:hex:39545397",
+        "otp:component:plug:hex:123091062",
+        "otp:component:websock:hex:3898161"
       ],
-      "ref": "otp:component:websock_adapter:hex:16123157"
+      "ref": "otp:component:websock_adapter:hex:95378882"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:mime:hex:92200854"
+      "ref": "otp:component:mime:hex:25825086"
     },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:logger:otp:72055478"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:optimus:hex:124476107"
+      "ref": "otp:component:optimus:hex:115036031"
     },
-    { "ref": "otp:component:xmerl:otp:64702251" },
+    { "ref": "otp:component:xmerl:otp:88902769" },
     {
       "dependsOn": [
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561"
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020"
       ],
-      "ref": "otp:component:telemetry:hex:111137185"
-    },
-    {
-      "dependsOn": [
-        "otp:component:bunt:hex:49979295",
-        "otp:component:file_system:hex:5267745",
-        "otp:component:jason:hex:87655102",
-        "otp:component:kernel:otp:41009003",
-        "otp:component:stdlib:otp:33644561",
-        "otp:component:elixir:otp:91030763",
-        "otp:component:crypto:otp:69550612",
-        "otp:component:eex:otp:45483983",
-        "otp:component:ex_unit:otp:106830735",
-        "otp:component:inets:otp:121672126",
-        "otp:component:logger:otp:72055478"
-      ],
-      "ref": "otp:component:credo:hex:95473491"
-    },
-    { "ref": "otp:component:dialyzer:otp:116986873" },
-    {
-      "dependsOn": [
-        "otp:component:jason:hex:87655102"
-      ],
-      "ref": "otp:component:excoveralls:hex:39185539"
+      "ref": "otp:component:telemetry:hex:132739312"
     },
     {
       "dependsOn": [
-        "otp:component:telemetry:hex:111137185"
+        "otp:component:bunt:hex:84001713",
+        "otp:component:file_system:hex:19985144",
+        "otp:component:jason:hex:102454825",
+        "otp:component:kernel:otp:73337799",
+        "otp:component:stdlib:otp:126969020",
+        "otp:component:elixir:otp:50056156",
+        "otp:component:crypto:otp:75923108",
+        "otp:component:eex:otp:33774477",
+        "otp:component:ex_unit:otp:78841851",
+        "otp:component:inets:otp:2772139",
+        "otp:component:logger:otp:112940656"
       ],
-      "ref": "otp:component:thousand_island:hex:46742362"
+      "ref": "otp:component:credo:hex:8906107"
+    },
+    { "ref": "otp:component:dialyzer:otp:101863772" },
+    {
+      "dependsOn": [
+        "otp:component:jason:hex:102454825"
+      ],
+      "ref": "otp:component:excoveralls:hex:29166415"
+    },
+    {
+      "dependsOn": [
+        "otp:component:telemetry:hex:132739312"
+      ],
+      "ref": "otp:component:thousand_island:hex:43785315"
     }
   ],
   "metadata": {
     "component": {
-      "bom-ref": "otp:component:ex_daytona:github:52732362",
+      "bom-ref": "otp:component:ex_daytona:github:53704919",
       "cpe": "cpe:2.3:a:the-ixway:ex_daytona:0.4.0:*:*:*:*:*:*:*",
       "description": "Unofficial Elixir SDK for the Daytona API (platform, toolbox, and analytics)\n",
       "externalReferences": [
@@ -2976,12 +3017,12 @@
         }
       ],
       "name": "ex_daytona",
-      "purl": "pkg:github/the-ixway/ex_daytona@0.4.0?download_url=https://github.com/The-Ixway/ex_daytona/archive/0.4.0.tar.gz&vcs_url=git%2Bhttps://github.com/The-Ixway/ex_daytona.git",
+      "purl": "pkg:github/the-ixway/ex_daytona@0.4.0?download_url=https:%2F%2Fgithub.com%2FThe-Ixway%2Fex_daytona%2Farchive%2F0.4.0.tar.gz&vcs_url=git%2Bhttps:%2F%2Fgithub.com%2FThe-Ixway%2Fex_daytona.git",
       "scope": "required",
       "type": "library",
       "version": "0.4.0"
     },
-    "timestamp": "2026-09-01T01:50:08Z",
+    "timestamp": "2026-10-06T18:45:26Z",
     "tools": {
       "components": [
         {
@@ -2989,12 +3030,12 @@
           "scope": "excluded",
           "supplier": { "name": "Erlang Ecosystem Foundation" },
           "type": "application",
-          "version": "0.10.0"
+          "version": "0.11.0"
         }
       ]
     }
   },
-  "serialNumber": "urn:uuid:9475dec4-336e-41fd-9180-e4799e332c52",
+  "serialNumber": "urn:uuid:b6b63d26-9d24-4281-a941-820a22289c71",
   "specVersion": "1.6",
   "version": 1
 }
