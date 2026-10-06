@@ -19,7 +19,7 @@ Add `ex_daytona` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ex_daytona, "~> 0.4.0"}
+    {:ex_daytona, "~> 0.5.0"}
   ]
 end
 ```
