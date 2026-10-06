@@ -15,8 +15,8 @@ spec title). For ongoing spec/template changes use the `/regenerate` skill.
 the Swagger 2.0 ones to OpenAPI 3.0 (`npx swagger2openapi`), verifies there
 are no cross-spec name collisions, and merges them deterministically into
 `openapi-spec.yaml`. The source URLs live in that script, not `.spec-source`
-(the spec-sync workflow was adapted to call it). The three APIs keep their
-own base URLs — see the README's "Base URLs" section:
+(spec refresh is manual; the scheduled spec-sync workflow was removed). The
+three APIs keep their own base URLs — see the README's "Base URLs" section:
 
 - main platform API → `https://app.daytona.io/api` (the configured default)
 - toolbox API → `{toolboxProxyUrl}/{sandboxId}`, per sandbox
@@ -67,7 +67,7 @@ belongs in one of the persistent sources:
 
 - `openapi-spec.yaml` — the API contract (or its upstream source recorded in
   `.spec-source`); fix upstream spec defects with idempotent scripts in
-  `spec-patches/`, never by hand-editing the spec (spec-sync re-downloads it)
+  `spec-patches/`, never by hand-editing the spec (fetch-spec re-downloads it)
 - `.openapi-generator/templates/` — the COMPLETE vendored Mustache template
   set (the elixir generator does not fall back to built-in templates, so
   never delete files from this directory; see `generator-config.yaml` for

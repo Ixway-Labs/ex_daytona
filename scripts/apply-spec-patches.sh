@@ -5,9 +5,9 @@ set -euo pipefail
 #
 # Real-world upstream specs ship defects — duplicate operationIds, parameters
 # declared in two places, invalid enum values. Patching openapi-spec.yaml in
-# place is not durable: the spec-sync workflow re-downloads the upstream spec
+# place is not durable: scripts/fetch-spec.sh re-downloads the upstream spec
 # and would silently reintroduce every defect. Patches in spec-patches/ are
-# applied automatically after every download (setup, spec-sync) and before
+# applied automatically after every download (setup, fetch-spec.sh) and before
 # every regeneration, so local fixes survive spec updates and stay reviewable.
 #
 # Usage: apply-spec-patches.sh [SPEC_PATH]   (default: openapi-spec.yaml)

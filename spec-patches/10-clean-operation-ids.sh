@@ -10,7 +10,7 @@ set -euo pipefail
 #    naming style of the analytics endpoints that DO have ids
 #    (`getSandboxLogs`, `getOrganizationUsageOverview`).
 #    Only fills MISSING ids: if upstream ever adds their own, theirs win and
-#    the change shows up in the spec-sync PR diff.
+#    the change shows up in the next fetch-spec diff.
 #
 # 2. The main spec leaks NestJS controller class names into some
 #    operationIds (`ConfigController_getConfig`, `WebhookController_send`),
@@ -19,7 +19,7 @@ set -euo pipefail
 #
 # Idempotent: filling an already-present id is a no-op, and stripped
 # prefixes cannot be stripped twice. Output stays jq -S formatted, matching
-# scripts/fetch-spec.sh, so spec-sync byte comparisons remain stable.
+# scripts/fetch-spec.sh, so repeated fetches remain byte-stable.
 #
 # jq is already a hard prerequisite of scripts/fetch-spec.sh, so using it
 # here adds no new dependency.
