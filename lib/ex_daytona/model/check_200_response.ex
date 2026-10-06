@@ -36,9 +36,9 @@ defmodule ExDaytona.Model.Check200Response do
   ]
 
   @type t :: %__MODULE__{
-          :details => %{optional(String.t()) => ExDaytona.Model.Check200ResponseDetailsValue.t()} | nil,
-          :error => %{optional(String.t()) => ExDaytona.Model.Check200ResponseDetailsValue.t()} | nil,
-          :info => %{optional(String.t()) => ExDaytona.Model.Check200ResponseDetailsValue.t()} | nil,
+          :details => %{optional(String.t()) => ExDaytona.Model.Check200ResponseInfoValue.t()} | nil,
+          :error => %{optional(String.t()) => ExDaytona.Model.Check200ResponseInfoValue.t()} | nil,
+          :info => %{optional(String.t()) => ExDaytona.Model.Check200ResponseInfoValue.t()} | nil,
           :status => String.t() | nil
         }
 
@@ -46,8 +46,8 @@ defmodule ExDaytona.Model.Check200Response do
 
   def decode(value) do
     value
-    |> Deserializer.deserialize(:details, :map, ExDaytona.Model.Check200ResponseDetailsValue)
-    |> Deserializer.deserialize(:error, :map, ExDaytona.Model.Check200ResponseDetailsValue)
-    |> Deserializer.deserialize(:info, :map, ExDaytona.Model.Check200ResponseDetailsValue)
+    |> Deserializer.deserialize(:details, :map, ExDaytona.Model.Check200ResponseInfoValue)
+    |> Deserializer.deserialize(:error, :map, ExDaytona.Model.Check200ResponseInfoValue)
+    |> Deserializer.deserialize(:info, :map, ExDaytona.Model.Check200ResponseInfoValue)
   end
 end

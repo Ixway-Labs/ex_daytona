@@ -33,7 +33,11 @@ defmodule ExDaytona.Model.Organization do
     :authenticatedRateLimitTtlSeconds,
     :createdAt,
     :createdBy,
+    :defaultQueueTimeout,
     :defaultRegionId,
+    :directorySyncStatus,
+    :directorySyncStatusChangedAt,
+    :directorySyncTokenRevokedAt,
     :experimentalConfig,
     :id,
     :maxCpuPerSandbox,
@@ -49,6 +53,7 @@ defmodule ExDaytona.Model.Organization do
     :sandboxLifecycleRateLimit,
     :sandboxLifecycleRateLimitTtlSeconds,
     :sandboxLimitedNetworkEgress,
+    :scimEnabled,
     :secretQuota,
     :snapshotDeactivationTimeoutMinutes,
     :ssoEnabled,
@@ -57,7 +62,8 @@ defmodule ExDaytona.Model.Organization do
     :suspendedUntil,
     :suspensionCleanupGracePeriodHours,
     :suspensionReason,
-    :updatedAt
+    :updatedAt,
+    :workosOrgId
   ]
 
   @type t :: %__MODULE__{
@@ -65,7 +71,11 @@ defmodule ExDaytona.Model.Organization do
           :authenticatedRateLimitTtlSeconds => number() | nil,
           :createdAt => DateTime.t(),
           :createdBy => String.t(),
+          :defaultQueueTimeout => integer() | nil,
           :defaultRegionId => String.t() | nil,
+          :directorySyncStatus => ExDaytona.Model.DirectorySyncStatus.t() | nil,
+          :directorySyncStatusChangedAt => DateTime.t() | nil,
+          :directorySyncTokenRevokedAt => DateTime.t() | nil,
           :experimentalConfig => map(),
           :id => String.t(),
           :maxCpuPerSandbox => number(),
@@ -81,6 +91,7 @@ defmodule ExDaytona.Model.Organization do
           :sandboxLifecycleRateLimit => number() | nil,
           :sandboxLifecycleRateLimitTtlSeconds => number() | nil,
           :sandboxLimitedNetworkEgress => boolean(),
+          :scimEnabled => boolean(),
           :secretQuota => number(),
           :snapshotDeactivationTimeoutMinutes => number(),
           :ssoEnabled => boolean(),
@@ -89,13 +100,15 @@ defmodule ExDaytona.Model.Organization do
           :suspendedUntil => DateTime.t(),
           :suspensionCleanupGracePeriodHours => number(),
           :suspensionReason => String.t(),
-          :updatedAt => DateTime.t()
+          :updatedAt => DateTime.t(),
+          :workosOrgId => String.t() | nil
         }
 
   alias ExDaytona.Deserializer
 
   def decode(value) do
     value
+    |> Deserializer.deserialize(:directorySyncStatus, :struct, ExDaytona.Model.DirectorySyncStatus)
     |> Deserializer.deserialize(:otelConfig, :struct, ExDaytona.Model.OtelConfig)
   end
 end
