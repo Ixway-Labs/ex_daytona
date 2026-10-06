@@ -3205,144 +3205,6 @@
           "MI355X"
         ]
       },
-      "HealthController_check_200_response": {
-        "example": {
-          "details": {
-            "database": {
-              "status": "up"
-            }
-          },
-          "error": {},
-          "info": {
-            "database": {
-              "status": "up"
-            }
-          },
-          "status": "ok"
-        },
-        "properties": {
-          "details": {
-            "additionalProperties": {
-              "$ref": "#/components/schemas/HealthController_check_200_response_info_value"
-            },
-            "example": {
-              "database": {
-                "status": "up"
-              }
-            },
-            "type": "object"
-          },
-          "error": {
-            "additionalProperties": {
-              "$ref": "#/components/schemas/HealthController_check_200_response_info_value"
-            },
-            "example": {},
-            "nullable": true,
-            "type": "object"
-          },
-          "info": {
-            "additionalProperties": {
-              "$ref": "#/components/schemas/HealthController_check_200_response_info_value"
-            },
-            "example": {
-              "database": {
-                "status": "up"
-              }
-            },
-            "nullable": true,
-            "type": "object"
-          },
-          "status": {
-            "example": "ok",
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "HealthController_check_200_response_info_value": {
-        "additionalProperties": true,
-        "properties": {
-          "status": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "status"
-        ],
-        "type": "object"
-      },
-      "HealthController_check_503_response": {
-        "example": {
-          "details": {
-            "database": {
-              "status": "up"
-            },
-            "redis": {
-              "message": "Could not connect",
-              "status": "down"
-            }
-          },
-          "error": {
-            "redis": {
-              "message": "Could not connect",
-              "status": "down"
-            }
-          },
-          "info": {
-            "database": {
-              "status": "up"
-            }
-          },
-          "status": "error"
-        },
-        "properties": {
-          "details": {
-            "additionalProperties": {
-              "$ref": "#/components/schemas/HealthController_check_200_response_info_value"
-            },
-            "example": {
-              "database": {
-                "status": "up"
-              },
-              "redis": {
-                "message": "Could not connect",
-                "status": "down"
-              }
-            },
-            "type": "object"
-          },
-          "error": {
-            "additionalProperties": {
-              "$ref": "#/components/schemas/HealthController_check_200_response_info_value"
-            },
-            "example": {
-              "redis": {
-                "message": "Could not connect",
-                "status": "down"
-              }
-            },
-            "nullable": true,
-            "type": "object"
-          },
-          "info": {
-            "additionalProperties": {
-              "$ref": "#/components/schemas/HealthController_check_200_response_info_value"
-            },
-            "example": {
-              "database": {
-                "status": "up"
-              }
-            },
-            "nullable": true,
-            "type": "object"
-          },
-          "status": {
-            "example": "error",
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
       "IdentityProvider": {
         "example": {
           "allowAnyDomain": false,
@@ -10294,6 +10156,144 @@
         ],
         "type": "object"
       },
+      "check_200_response": {
+        "example": {
+          "details": {
+            "database": {
+              "status": "up"
+            }
+          },
+          "error": {},
+          "info": {
+            "database": {
+              "status": "up"
+            }
+          },
+          "status": "ok"
+        },
+        "properties": {
+          "details": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/check_200_response_info_value"
+            },
+            "example": {
+              "database": {
+                "status": "up"
+              }
+            },
+            "type": "object"
+          },
+          "error": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/check_200_response_info_value"
+            },
+            "example": {},
+            "nullable": true,
+            "type": "object"
+          },
+          "info": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/check_200_response_info_value"
+            },
+            "example": {
+              "database": {
+                "status": "up"
+              }
+            },
+            "nullable": true,
+            "type": "object"
+          },
+          "status": {
+            "example": "ok",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "check_200_response_info_value": {
+        "additionalProperties": true,
+        "properties": {
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "type": "object"
+      },
+      "check_503_response": {
+        "example": {
+          "details": {
+            "database": {
+              "status": "up"
+            },
+            "redis": {
+              "message": "Could not connect",
+              "status": "down"
+            }
+          },
+          "error": {
+            "redis": {
+              "message": "Could not connect",
+              "status": "down"
+            }
+          },
+          "info": {
+            "database": {
+              "status": "up"
+            }
+          },
+          "status": "error"
+        },
+        "properties": {
+          "details": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/check_200_response_info_value"
+            },
+            "example": {
+              "database": {
+                "status": "up"
+              },
+              "redis": {
+                "message": "Could not connect",
+                "status": "down"
+              }
+            },
+            "type": "object"
+          },
+          "error": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/check_200_response_info_value"
+            },
+            "example": {
+              "redis": {
+                "message": "Could not connect",
+                "status": "down"
+              }
+            },
+            "nullable": true,
+            "type": "object"
+          },
+          "info": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/check_200_response_info_value"
+            },
+            "example": {
+              "database": {
+                "status": "up"
+              }
+            },
+            "nullable": true,
+            "type": "object"
+          },
+          "status": {
+            "example": "error",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "computeruse.AccessibilityNode": {
         "properties": {
           "actions": {
@@ -15086,7 +15086,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HealthController_check_200_response"
+                  "$ref": "#/components/schemas/check_200_response"
                 }
               }
             },
@@ -15096,7 +15096,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HealthController_check_503_response"
+                  "$ref": "#/components/schemas/check_503_response"
                 }
               }
             },

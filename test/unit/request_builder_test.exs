@@ -117,6 +117,14 @@ defmodule RequestBuilderTest do
       assert {:ok, %{"a" => 1}} = @rb.evaluate_response({:ok, env}, [{200, %{}}])
     end
 
+    # Regression: {200, []} mappings (arrays of untyped objects) crashed the
+    # deserializer before the template learned to plain-JSON decode them.
+    test "decodes a matched status into a plain list with an empty-list mapping" do
+      env = %Tesla.Env{status: 200, body: ~s([{"a":1},{"b":2}])}
+
+      assert {:ok, [%{"a" => 1}, %{"b" => 2}]} = @rb.evaluate_response({:ok, env}, [{200, []}])
+    end
+
     test "returns the env unchanged when mapped to false" do
       env = %Tesla.Env{status: 200, body: "raw bytes"}
 

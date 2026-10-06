@@ -49,6 +49,9 @@ lib/ex_daytona/model/available_sandbox_class.ex
 lib/ex_daytona/model/build_info.ex
 lib/ex_daytona/model/chart.ex
 lib/ex_daytona/model/chart_element.ex
+lib/ex_daytona/model/check_200_response.ex
+lib/ex_daytona/model/check_200_response_info_value.ex
+lib/ex_daytona/model/check_503_response.ex
 lib/ex_daytona/model/cli_oidc_config.ex
 lib/ex_daytona/model/code_run_artifacts.ex
 lib/ex_daytona/model/code_run_request.ex
@@ -121,9 +124,6 @@ lib/ex_daytona/model/git_status.ex
 lib/ex_daytona/model/gpu_capacity.ex
 lib/ex_daytona/model/gpu_capacity_response.ex
 lib/ex_daytona/model/gpu_type.ex
-lib/ex_daytona/model/health_controller_check_200_response.ex
-lib/ex_daytona/model/health_controller_check_200_response_info_value.ex
-lib/ex_daytona/model/health_controller_check_503_response.ex
 lib/ex_daytona/model/identity_provider.ex
 lib/ex_daytona/model/initialize_request.ex
 lib/ex_daytona/model/int_filter.ex

@@ -24,15 +24,15 @@ defmodule ExDaytona.Api.UsersTest do
     end
   end
 
-  describe "get_available_account_providers/2" do
+  describe "get_account_providers/2" do
     test "decodes a list of AccountProvider structs", %{bypass: bypass, conn: conn} do
       MockServer.expect_get(bypass, "/users/account-providers", 200, [
-        %{name: "github", displayName: "GitHub"},
-        %{name: "google", displayName: "Google"}
+        %{provider: "GitHubOAuth", displayName: "GitHub", linked: true},
+        %{provider: "GoogleOAuth", displayName: "Google", linked: false}
       ])
 
-      assert {:ok, [%Model.AccountProvider{name: "github", displayName: "GitHub"}, _]} =
-               Users.get_available_account_providers(conn)
+      assert {:ok, [%Model.AccountProvider{provider: "GitHubOAuth", displayName: "GitHub", linked: true}, _]} =
+               Users.get_account_providers(conn)
     end
   end
 end

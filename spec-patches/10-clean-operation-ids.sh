@@ -17,6 +17,13 @@ set -euo pipefail
 #    yielding functions like `config_controller_get_config/1`. Strip the
 #    `<Name>Controller_` prefix.
 #
+# 3. Newer main specs also lift auto-generated inline response schemas into
+#    components under prefixed names (`HealthController_check_200_response`),
+#    which would rename the generated models (`Check200Response` ->
+#    `HealthControllerCheck200Response`). Strip the same prefix from
+#    component schema names and rewrite every `$ref`, failing loudly if a
+#    stripped name would collide with an existing schema.
+#
 # Idempotent: filling an already-present id is a no-op, and stripped
 # prefixes cannot be stripped twice. Output stays jq -S formatted, matching
 # scripts/fetch-spec.sh, so repeated fetches remain byte-stable.
@@ -62,6 +69,24 @@ jq -S '
       else .
       end
     ))
+  # --- 3. Strip controller-class prefixes from component schema names --------
+  | if (.components.schemas // null) != null then
+      (.components.schemas) as $schemas
+      | ([$schemas | keys[] | select(test("^[A-Za-z]+Controller_"))]) as $prefixed
+      | ([$prefixed[] | sub("^[A-Za-z]+Controller_"; "")]) as $stripped
+      | if ([$stripped[] | select(. as $s | $schemas | has($s))] | length) > 0
+           or (($stripped | unique | length) != ($stripped | length))
+        then error("10-clean-operation-ids: stripping a Controller_ prefix would collide with an existing schema name")
+        else .
+        end
+      | .components.schemas |= with_entries(.key |= sub("^[A-Za-z]+Controller_"; ""))
+      | walk(
+          if type == "object" and (.["$ref"] | type) == "string"
+          then .["$ref"] |= sub("^#/components/schemas/[A-Za-z]+Controller_"; "#/components/schemas/")
+          else .
+          end
+        )
+    else . end
 ' "$SPEC" > "$TMP"
 
 mv "$TMP" "$SPEC"
