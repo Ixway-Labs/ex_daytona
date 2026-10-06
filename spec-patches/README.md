@@ -4,11 +4,11 @@ Durable local fixes for defects in the upstream OpenAPI spec.
 
 Real-world specs ship problems — duplicate `operationId`s, a parameter
 declared in both query and body, invalid examples. Editing
-`openapi-spec.yaml` by hand is not durable: the weekly spec-sync workflow
-re-downloads the upstream spec and silently reintroduces every defect.
+`openapi-spec.yaml` by hand is not durable: the next `scripts/fetch-spec.sh`
+run re-downloads the upstream spec and silently reintroduces every defect.
 Patches placed here are applied automatically:
 
-- after the spec is downloaded (setup and the spec-sync workflow), and
+- after the spec is downloaded (setup and `scripts/fetch-spec.sh`), and
 - before every regeneration (`./scripts/regenerate.sh`),
 
 so your fixes survive spec updates and stay reviewable in git.
@@ -51,8 +51,8 @@ File.write!(spec_path, patched)
 
 For structural edits to JSON specs, decode with the built-in `JSON` module,
 transform, and re-encode deterministically (sort object keys so repeated
-runs are byte-stable — spec-sync compares the patched download to the
-committed spec byte-for-byte).
+runs are byte-stable, so a fresh download diffs cleanly against the
+committed spec).
 
-Spec-sync PRs will fail loudly (rather than silently regressing) when a
+Patch application fails loudly (rather than silently regressing) when a
 patch no longer applies cleanly.

@@ -16,10 +16,10 @@ on:
     branches:
       - main
 
-  # NOTE: Scheduled regeneration against an upstream spec URL is handled by
-  # the separate spec-sync workflow (spec-sync.yml), which fetches the URL
-  # recorded in .spec-source weekly and opens a PR when it changed. This
-  # workflow only reacts to in-repo spec changes and manual dispatch.
+  # NOTE: There is no scheduled upstream spec sync (the weekly spec-sync
+  # workflow was removed). Refresh the spec manually with
+  # ./scripts/fetch-spec.sh and push the result; this workflow reacts to
+  # in-repo spec changes and manual dispatch only.
 
 jobs:
   regenerate:

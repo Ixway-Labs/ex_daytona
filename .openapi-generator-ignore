@@ -36,7 +36,7 @@ CLAUDE.md
 .githooks/**
 bom.cdx.json
 
-# Spec source URL and local spec patches (used by spec-sync/regenerate)
+# Spec source URL and local spec patches (used by fetch-spec/regenerate)
 .spec-source
 spec-patches/**
 

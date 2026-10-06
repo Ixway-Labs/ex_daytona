@@ -122,8 +122,8 @@ jq -S \
   "$WORK_DIR/main.json" > "$WORK_DIR/merged.json"
 
 # JSON is valid YAML, and jq -S output is deterministic (sorted keys), so
-# repeated runs against unchanged upstream specs are byte-identical — which
-# the spec-sync workflow relies on for its drift comparison.
+# repeated runs against unchanged upstream specs are byte-identical, so a
+# fresh fetch diffs cleanly against the committed spec.
 mv "$WORK_DIR/merged.json" "$OUTPUT"
 echo_info "Wrote merged spec to $OUTPUT"
 

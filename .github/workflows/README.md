@@ -6,7 +6,6 @@
 | `conventional-commits.yml` | PR | Validates PR titles (Conventional Commits) — feeds release automation; use squash merges |
 | `release.yml` | manual dispatch | git_ops release: version bump from commit history + changelog + tag, then triggers publish. First run tags the current version |
 | `publish.yml` | `v*.*.*` tags | Publishes to Hex.pm and creates a GitHub release with the SBOM attached |
-| `spec-sync.yml` | weekly + manual | Fetches the upstream spec URL from `.spec-source`, applies `spec-patches/`, opens a regeneration PR when it changed |
 | `regenerate-sdk.yml` | spec changes on main | Opens a PR with the regenerated SDK |
 | `breaking-changes.yml` | PRs touching spec/lib | oasdiff breaking-change gate + PR comment |
 
@@ -19,8 +18,10 @@
 
 ## Notes
 
-- PRs created by workflows with the default `GITHUB_TOKEN` (spec-sync,
-  regenerate-sdk) do **not** trigger other workflows. For CI on those PRs,
+- Spec refresh is manual: run `./scripts/fetch-spec.sh` and push the result
+  (the weekly spec-sync workflow was removed; it had been failing every run).
+- PRs created by workflows with the default `GITHUB_TOKEN`
+  (regenerate-sdk) do **not** trigger other workflows. For CI on those PRs,
   store a fine-grained PAT as a secret and use it as the `token` input of
   the create-pull-request steps.
 - release.yml never uses `git_ops.release --initial` (it conflicts with
